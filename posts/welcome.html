@@ -5,17 +5,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Welcome — Investing</title>
 <style>
-  body { font: 16px/1.6 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-         color: #2d2d2d; max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; background: #fafafa; }
-  h1 { font-size: 22px; }
-  .date { color: #999; font-size: 13px; }
-  .back { margin-top: 40px; display: inline-block; color: #1a7a4c; }
+:root{
+  --bg:#0b1220; --card:#111c30; --line:#22304a;
+  --ink:#e8eef7; --sub:#93a4bc; --dim:#5d6f8a; --cyan:#38bdf8;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--sub);
+  font-family:-apple-system,system-ui,"Segoe UI",Roboto,sans-serif;
+  font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--cyan);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px 70px}
+.top{display:flex;justify-content:space-between;align-items:center;
+  padding:14px 0;border-bottom:1px solid var(--line);font-size:13px}
+.top a{color:var(--dim)}
+.top a:hover{color:var(--cyan)}
+h1{color:var(--ink);font-size:30px;letter-spacing:-.01em;margin:36px 0 6px;line-height:1.15}
+.date{color:var(--dim);font-size:13px;margin-bottom:24px}
+.prose p{margin:0 0 16px;font-size:15.5px}
+.prose b, .prose strong{color:var(--ink)}
+.back{margin-top:36px;display:inline-block;font-size:14px}
 </style>
 </head>
 <body>
-<h1>Welcome</h1>
-<div class="date">2026-09-26</div>
-<p>This blog covers the investing process: index funds, dollar-cost averaging, and the boring math that compounds. The thesis up front — the two things that matter are <em>how long you stay in</em> and <em>how low your costs are</em>. Everything else is commentary.</p>
-<a class="back" href="../index.html">← Back to Investing blog</a>
+<div class="wrap">
+  <div class="top">
+    <a href="../index.html">← Investing blog</a>
+    <a href="https://link744.github.io/">Main blog</a>
+  </div>
+  <h1>Welcome</h1>
+  <div class="date">Sep 26, 2026</div>
+  <div class="prose">
+    <p>This blog covers the investing process — index funds, dollar-cost averaging, and the boring math that compounds. The thesis up front: the two things that matter are <b>how long you stay in</b> and <b>how low your costs are</b>. Everything else is commentary.</p>
+    <p>Format: every post is one infographic with the numbers up front, then a short plain-English read. No jargon, no hype, no advice you didn't ask for — just the data, what it says, and what I'd do with it.</p>
+  </div>
+  <a class="back" href="../index.html">← Back to Investing blog</a>
+</div>
 </body>
 </html>

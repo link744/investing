@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>US Bond Market: When to Buy Now</title>
+<style>
+:root{--bg:#0b1220; --card:#111c30; --card2:#0f1a2e; --line:#22304a; --ink:#e8eef7; --sub:#93a4bc; --dim:#5d6f8a; --cyan:#38bdf8;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--sub);
+  font-family:-apple-system,system-ui,"Segoe UI",Roboto,sans-serif;
+  font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--cyan);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px 70px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);font-size:13px}
+.top a{color:var(--dim)}
+.top a:hover{color:var(--cyan)}
+.mast{padding:36px 0 20px}
+.badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:2px 8px;border-radius:5px;border:1px solid #164e63;color:var(--cyan);background:#082f49;margin-bottom:12px}
+h1.post-title{color:var(--ink);font-size:30px;letter-spacing:-.01em;margin:0;line-height:1.15}
+.pmeta{color:var(--dim);font-size:13px;margin-top:8px}
+.inf{margin:26px 0 0;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:6px 16px 10px}
+.read{margin-top:40px;border-top:2px solid var(--line);padding-top:18px}
+.read .kick{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);margin-bottom:10px;font-weight:700}
+.read p{margin:0 0 14px;font-size:15.5px;color:#c3cede}
+.read p:last-child{margin-bottom:0}
+.read b, .read strong{color:var(--ink)}
+.back{display:inline-block;margin-top:34px;font-size:14px}
+footer{margin-top:44px;border-top:1px solid var(--line);padding-top:14px;color:var(--dim);font-size:12.5px}
+/* ===== infographic styles (scoped) ===== */
+.inf .inf{
+    --bg:#0e1626; --panel:#151f33; --panel2:#1b2740; --ink:#e8eefb; --ink2:#aab6d0;
+    --line:#2a3a5a; --accent:#4f8cff; --up:#ff6b6b; --down:#2ed573; --gold:#ffcf6b;
+  }.inf *{box-sizing:border-box}.inf .inf{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.4}.inf .wrap{max-width:1080px;margin:0 auto;padding:22px}.inf .head{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:10px;
+    border-bottom:3px solid var(--accent);padding-bottom:12px;margin-bottom:18px}.inf .head h1{font-size:30px;margin:0;line-height:1.12;letter-spacing:-.5px}.inf .head .sub{color:var(--ink2);font-size:14px;margin-top:6px}.inf .head .date{font-size:13px;color:var(--ink2);text-align:right}.inf .head .date b{color:var(--ink);font-size:16px;display:block}.inf .grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.inf .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}.inf .c2{grid-column:span 2}.inf .c3{grid-column:span 3}.inf .c4{grid-column:span 4}.inf .c6{grid-column:span 6}.inf .k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}.inf h2{font-size:15px;margin:6px 0 10px}.inf ul{margin:0;padding-left:18px}.inf li{margin:6px 0;font-size:13.5px}.inf .yield{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--line)}.inf .yield:last-child{border:0}.inf .yield .tenor{width:84px;color:var(--ink2);font-size:13px}.inf .bar{flex:1;height:10px;border-radius:6px;background:#1f2c48;overflow:hidden;position:relative}.inf .bar i{display:block;height:100%;background:linear-gradient(90deg,#4f8cff,#7fb0ff)}.inf .yield .val{width:52px;text-align:right;font-weight:700;font-size:15px}.inf .big{font-size:34px;font-weight:800;letter-spacing:-1px}.inf .note{color:var(--ink2);font-size:12.5px;margin-top:8px}.inf .tag{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;margin:0 4px 4px 0}.inf .t-buy{background:#12351f;color:#5fe08a;border:1px solid #1f6b3a}.inf .t-caution{background:#3a2a12;color:var(--gold);border:1px solid #7a5a1f}.inf .buy-card{background:linear-gradient(160deg,#12243d,#0f1d33)}.inf .why .d{font-size:13.5px;padding:8px 0;border-bottom:1px dashed var(--line)}.inf .why .d:last-child{border:0}.inf .why b{color:var(--gold)}.inf .op .o{font-size:13px;padding:8px 10px;background:var(--panel2);border-left:3px solid var(--accent);border-radius:6px;margin:7px 0}.inf .op .o b{color:var(--ink)}.inf .op .o span{color:var(--ink2)}.inf .scen{font-size:13.5px;padding:9px 0;border-bottom:1px solid var(--line)}.inf .scen:last-child{border:0}.inf .scen b{color:#5fe08a}.inf .foot{margin-top:16px;color:var(--ink2);font-size:11.5px;border-top:1px solid var(--line);padding-top:12px}.inf .foot a{color:var(--accent)}@media(max-width:720px) { .inf .c2, .inf .c3, .inf .c4, .inf .c6{grid-column:span 6}.inf .head h1{font-size:24px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="../index.html">← Investing blog</a>
+    <a href="https://link744.github.io/">Main blog</a>
+  </div>
+  <div class="mast">
+    <span class="badge">Market check</span>
+    <h1 class="post-title">US Bond Market: When to Buy Now</h1>
+    <div class="pmeta">September 24, 2026 · <a href="../index.html">all posts</a></div>
+  </div>
+
+  <figure class="inf">
+
+<div class="wrap">
+  <div class="head">
+    <div>
+      <h1>US Bond Market: When to Buy Now</h1>
+      <div class="sub">Yields near 20+ year highs as the Fed <b>hikes</b> against reignited inflation</div>
+    </div>
+    <div class="date"><b>September 24, 2026</b>Data through Sep 23 (FRED/Treasury)</div>
+  </div>
+
+  <div class="grid">
+    <!-- YIELD CURVE -->
+    <div class="card c3">
+      <span class="k">Current Treasury Yields</span>
+      <div class="yield"><span class="tenor">3-mo T-bill</span><span class="bar"><i style="width:77%"></i></span><span class="val">4.19%</span></div>
+      <div class="yield"><span class="tenor">2-year</span><span class="bar"><i style="width:90%"></i></span><span class="val">4.85%</span></div>
+      <div class="yield"><span class="tenor">5-year</span><span class="bar"><i style="width:93%"></i></span><span class="val">4.99%</span></div>
+      <div class="yield"><span class="tenor">10-year</span><span class="bar"><i style="width:96%"></i></span><span class="val">5.11%</span></div>
+      <div class="yield"><span class="tenor">30-year</span><span class="bar"><i style="width:100%;background:linear-gradient(90deg,#ff6b6b,#ff9a6b)"></i></span><span class="val">~5.4%</span></div>
+      <div class="note">30-yr is its <b style="color:var(--up)">highest since 2004</b> (peaked 5.44% Wed, 5.48% Thu). 10-yr last hit ~5% back in <b>2007</b>. Curve is steep: long bonds are yielding ~1.2% more than bills.</div>
+    </div>
+
+    <!-- HEADLINE -->
+    <div class="card c3" style="background:linear-gradient(160deg,#1a2035,#241a1a)">
+      <span class="k" style="color:var(--up)">The Big Picture</span>
+      <div class="big" style="color:var(--up)">5.4%</div>
+      <div class="note">30-yr Treasury yield — highest in 22 years. This is a <b>rate-hike</b> environment, not a cut one: the Fed raised for the first time since 2023 and markets price a <b>70% chance of another +25bp hike in October</b> (56% in December). Rising yields = falling bond prices — so <b>where</b> you buy matters.</div>
+    </div>
+
+    <!-- WHY -->
+    <div class="card c4 why">
+      <span class="k">Why Yields Spiked This Week</span>
+      <div class="d"><b>Hot data:</b> PMIs showed business activity at its fastest pace in years; fewer jobless claims — a hotter economy invites more hikes.</div>
+      <div class="d"><b>Inflation reignited:</b> CPI at <b>3.4%</b> (Aug), up from near-2% earlier this year; median Fed projection won't hit 2% until ~<b>2029</b>.</div>
+      <div class="d"><b>Oil / US–Iran:</b> diesel hit a record <b>$6.53/gal</b>; prolonged conflict keeps crude high and pressure on the Fed to hike.</div>
+      <div class="d"><b>Weak auction:</b> bidders demanded higher yields at Wednesday's 5-yr Treasury auction — "reluctant buyers" of the world's largest borrower.</div>
+    </div>
+
+    <!-- RATE PRICING -->
+    <div class="card c2">
+      <span class="k">Fed Rate Odds (CME FedWatch)</span>
+      <div class="big" style="color:var(--gold)">+25bp</div>
+      <div class="note"><b>Oct 2026:</b> 70% chance of a <b>hike</b><br><b>Dec 2026:</b> 56% chance of a <b>hike</b><br><br>Two more hikes ≈ <b>4.25–4.5%</b> benchmark, ~0.75pt above the start-of-Sept level. 30-yr mortgage passed <b>7%</b> — a ~2-year high.</div>
+    </div>
+
+    <!-- WHEN TO BUY -->
+    <div class="card c6 buy-card">
+      <span class="k" style="color:#5fe08a">When You Should BUY Bonds Now</span>
+      <h2>Five scenarios where buying today makes sense</h2>
+      <div class="scen"><b>1 · Lock in a high yield for the long run.</b> With the 10-yr at a 2007-high and the 30-yr at a 22-year high, you can lock in ~5% for 10–30 years <i>today</i>. If you're confident this is near the top, you've locked a rate the market won't offer once inflation cools.</div>
+      <div class="scen"><b>2 · You think the hikes are nearly over (peak rates).</b> If CPI rolls off toward 2% by ~2029 and the Fed pauses/cuts, <b>long-duration Treasuries gain</b> — both reinvestment yield and price appreciation. This is the case to buy 10-yr / 30-yr bonds <i>now</i>.</div>
+      <div class="scen"><b>3 · You need a risk-free cash floor.</b> T-bills pay ~4.2% with zero default risk. Higher yields pressure stocks, so short Treasuries become a "legitimate portfolio competitor" — park cash while you wait.</div>
+      <div class="scen"><b>4 · You're a retiree / income seeker.</b> High coupons deliver income without equity risk. When you can earn ~5% without risk, "every risky asset must clear a much higher hurdle."</div>
+      <div class="scen"><b>5 · You expect a later rate-CUT cycle (softening economy).</b> Buying now captures today's high coupon and, when the Fed eventually cuts, bond prices rise. Best done as a <b>ladder / barbell</b>, not one lump sum.</div>
+    </div>
+
+    <!-- CAUTION -->
+    <div class="card c3" style="background:linear-gradient(160deg,#241c12,#1a1d2c)">
+      <span class="k" style="color:var(--gold)">When to Hold Off / Caution</span>
+      <ul>
+        <li><b>You think the Fed is still going higher.</b> With a 70% Oct hike priced, avoid locking in <i>very long</i> duration today — you'd pay up for a bond that can fall as yields climb. Favor the short end + a ladder.</li>
+        <li><b>Oil/inflation keep surging.</b> More hikes likely; short Treasuries/T-bills let you reprice up as yields rise.</li>
+        <li><b>You need principal safety AND growth.</b> Long bonds carry big price risk in this environment — don't chase duration for yield alone.</li>
+      </ul>
+    </div>
+
+    <!-- OTHER OPPS -->
+    <div class="card c3 op">
+      <span class="k">Other Opportunities from High Bond APRs</span>
+      <div class="o"><b>T-bills / Money Market</b> — <span>~4.2% risk-free, no default risk; the new cash default.</span></div>
+      <div class="o"><b>CDs & HY savings</b> — <span>now >4% APY, FDIC-insured, rising with each Fed hike.</span></div>
+      <div class="o"><b>TIPS (inflation-protected)</b> — <span>real yield + CPI protection; attractive with 3.4% inflation.</span></div>
+      <div class="o"><b>I-Bonds</b> — <span>fixed rate + variable inflation kicker.</span></div>
+      <div class="o"><b>High-Yield (HY) corporates</b> — <span>wide spreads, higher yield, higher default risk.</span></div>
+      <div class="o"><b>Municipal bonds</b> — <span>tax-exempt; effective yield higher for high-bracket investors.</span></div>
+      <div class="o"><b>Bond ETFs / Treasury ladder</b> — <span>instant diversification + dollar-cost-average into Treasuries.</span></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    Strategy takeaway: in a hiking cycle, a <b>barbell</b> (short T-bills for cash yield + a modest long-Treasury position to lock yield) plus a <b>ladder</b> is the balanced play.<br>
+    Sources: <a href="https://fred.stlouisfed.org/" rel="noopener">FRED / St. Louis Fed</a> (yields through Sep 23, 2026), <a href="https://www.cbsnews.com/news/bond-market-treasury-yields-inflation-fed/" rel="noopener">CBS News / AP</a>, <a href="https://www.reuters.com/business/us-30-year-bond-yield-rises-highest-since-2004-selloff-deepens-2026-09-24/" rel="noopener">Reuters</a>, <a href="https://www.axios.com/2026/09/24/treasury-yields-inflation-bonds" rel="noopener">Axios</a>. Not investment advice.
+  </div>
+</div>
+
+  </figure>
+
+  <div class="read">
+    <div class="kick">In plain English</div>
+    
+<p>Here's what this is saying: bonds are paying the most they have in 22 years right now. The 30-year Treasury is yielding about 5.4%, and the 10-year is back to a 2007-level. That's unusual and it's worth understanding before you decide anything.</p>
+<p>Why are yields this high? Because the economy is hot and inflation reignited — CPI is at 3.4% after being near 2% earlier this year — so the Fed is <b>hiking</b> rates instead of cutting them. The market prices a 70% chance of another 25-basis-point hike in October. In plain terms: money is expensive right now, and it looks like it will stay expensive at least into December.</p>
+<p>What does that mean for you? Two honest takes, and which one applies depends on your belief about where rates are headed.</p>
+<p><b>Buying makes sense if:</b> you want to lock in ~5% for 10–30 years with zero default risk (that's the 10- and 30-year case); you think the hikes are nearly over — if inflation rolls off and the Fed starts cutting, the bonds you bought at 5% will be worth <i>more</i>, not just pay you 5%; you need a risk-free floor on cash (T-bills at 4.2% genuinely compete with stocks now); you're retired and want income without equity risk; or you expect a later rate-cut cycle and want to be positioned when prices rise.</p>
+<p><b>Hold off if:</b> you think the Fed still has hikes left in it — in that case don't lock in long bonds yet, because long bonds lose value as yields keep climbing. Stick to the short end (T-bills, short T-bonds) and a ladder. Also: if oil and inflation keep surging, expect more hikes and short bonds let you reprice up as yields rise. And if you need both principal safety <i>and</i> growth, long bonds carry real price risk in this environment.</p>
+<p>The balanced play the infographic points at: a <b>barbell + ladder</b> — short T-bills for the cash yield plus a modest long-Treasury position to lock the yield, plus dollar-cost-averaging in over time rather than one lump sum.</p>
+<p>One framing note: this is <i>not</i> the 1981 bond bear market. Back then the Fed was fighting 14% inflation with a 20% funds rate. Today's problem is a hot economy and a reignited 3.4% inflation — the Fed is <i>adding</i> rates, not having just finished a brutal tightening cycle. The data says the same shape (yields spiking), a very different scale.</p>
+
+  </div>
+
+  <a class="back" href="../index.html">← Back to Investing blog</a>
+
+  <footer>Not investment advice. Numbers are as of September 24, 2026 and were sourced from public data at the time of writing.</footer>
+</div>
+</body>
+</html>
