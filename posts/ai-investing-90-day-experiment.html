@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Investing: 90-Day Experiment</title>
+<style>
+:root{--bg:#0b1220; --card:#111c30; --line:#22304a; --ink:#e8eef7; --sub:#93a4bc; --dim:#5d6f8a; --cyan:#38bdf8;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--sub);
+  font-family:-apple-system,system-ui,"Segoe UI",Roboto,sans-serif;
+  font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--cyan);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px 70px}
+.top{display:flex;justify-content:space-between;align-items:center;
+  padding:14px 0;border-bottom:1px solid var(--line);font-size:13px}
+.top a{color:var(--dim)}
+.top a:hover{color:var(--cyan)}
+.mast{padding:36px 0 20px}
+.badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:2px 8px;border-radius:5px;border:1px solid #164e63;color:var(--cyan);background:#082f49;margin-bottom:12px}
+.badge.live{border-color:#14532d;color:#5fe08a;background:#052e16}
+h1.post-title{color:var(--ink);font-size:30px;letter-spacing:-.01em;margin:0;line-height:1.15}
+.pmeta{color:var(--dim);font-size:13px;margin-top:8px}
+.inf{margin:26px 0 0;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:18px 16px 12px}
+.read{margin-top:40px;border-top:2px solid var(--line);padding-top:18px}
+.read .kick{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);margin-bottom:10px;font-weight:700}
+.read p{margin:0 0 14px;font-size:15.5px;color:#c3cede}
+.read p:last-child{margin-bottom:0}
+.read b,.read strong{color:var(--ink)}
+.back{display:inline-block;margin-top:34px;font-size:14px}
+footer{margin-top:44px;border-top:1px solid var(--line);padding-top:14px;color:var(--dim);font-size:12.5px}
+/* infographic cards */
+.inf .head{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:10px;border-bottom:3px solid #4f8cff;padding-bottom:12px;margin-bottom:16px}
+.inf .head h1{color:var(--ink);font-size:24px;margin:0;line-height:1.15;letter-spacing:-.3px}
+.inf .head .sub{color:#aab6d0;font-size:13.5px;margin-top:6px}
+.inf .head .date{font-size:12.5px;color:#aab6d0;text-align:right}
+.inf .head .date b{color:var(--ink);font-size:15px;display:block}
+.inf .grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.inf .card{background:#151f33;border:1px solid #2a3a5a;border-radius:14px;padding:16px}
+.inf .c2{grid-column:span 2}
+.inf .c3{grid-column:span 3}
+.inf .c6{grid-column:span 6}
+.inf .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#4f8cff;font-weight:700}
+.inf h2{color:var(--ink);font-size:15px;margin:6px 0 10px}
+.inf ul{margin:0;padding-left:18px}
+.inf li{margin:6px 0;font-size:13.5px;color:#aab6d0}
+.inf li b{color:var(--ink)}
+.inf table{width:100%;border-collapse:collapse;font-size:13px}
+.inf th{color:#aab6d0;text-align:right;font-size:12px;padding:6px 8px;border-bottom:2px solid #2a3a5a;font-weight:700}
+.inf th:first-child{text-align:left}
+.inf td{padding:7px 8px;border-bottom:1px solid #2a3a5a;color:#aab6d0}
+.inf td:first-child{color:var(--ink);font-weight:600;text-align:left}
+.inf td.num{text-align:right;font-weight:700}
+.inf .big{font-size:34px;font-weight:800;letter-spacing:-1px;color:var(--ink)}
+.inf .note{color:#aab6d0;font-size:12.5px;margin-top:8px}
+.inf .fig{background:#fafaf7;border-radius:12px;padding:14px 14px 10px;margin:0 0 14px}
+.inf .fig svg{max-width:100%;height:auto;display:block;margin:0 auto}
+.inf figcaption{color:#6a6a6a;font-size:12.5px;margin-top:8px;line-height:1.45}
+.inf .statrow{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}
+.inf .statrow div{flex:1;min-width:110px}
+.inf .statrow b{display:block;font-size:19px;color:var(--ink);letter-spacing:-.4px}
+.inf .statrow span{font-size:11px;color:#8fa0bd;text-transform:uppercase;letter-spacing:.07em}
+.inf .foot{color:#aab6d0;font-size:12.5px;margin-top:14px;border-top:1px solid #2a3a5a;padding-top:12px;line-height:1.5}
+@media (max-width:640px){.inf .c2,.inf .c3{grid-column:span 6}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="../index.html">&#8592; Investing blog</a>
+    <a href="https://link744.github.io/">Main blog</a>
+  </div>
+  <div class="mast">
+    <span class="badge live">Live experiment</span>
+    <h1 class="post-title">AI Investing: 90-Day Experiment</h1>
+    <div class="pmeta">September 26, 2026 &#183; <a href="../index.html">all posts</a></div>
+  </div>
+
+  <figure class="inf">
+    <div class="head">
+      <div>
+        <h1>AI Investing: 90-Day Experiment</h1>
+        <div class="sub">A deterministic, AI-run trend-momentum bot trades a <b>$1,000 paper seed</b> for 90 days. The bar: beat 10% annualized while protecting the seed.</div>
+      </div>
+      <div class="date"><b>Day 2 of 90</b>Started Sep 24, 2026</div>
+    </div>
+
+    <div class="grid">
+      <!-- HEADLINE -->
+      <div class="card c3">
+        <span class="k">Account (paper, $1,000 seed)</span>
+        <div class="big">$1,006.29</div>
+        <div class="note"><b style="color:#5fe08a">+$6.29 (+0.63%)</b> in two trading days. Max drawdown so far: <b>0.33%</b>. Four positions open, cash ~$0.27. (10% ARR &asymp; ~2.5% over 90 days &mdash; we're on pace, not there yet.)</div>
+      </div>
+
+      <!-- GOALS -->
+      <div class="card c3">
+        <span class="k">What 90 Days Must Prove</span>
+        <ul>
+          <li><b>Beat 10% annualized</b> on the $1,000 seed &mdash; roughly +$25 in 90 days, after the bot's own stop-losses and trims.</li>
+          <li><b>Protect the seed:</b> &minus;5% from the seed &rarr; flatten and stand down; &minus;20% &rarr; experiment fully stopped. No overrides.</li>
+          <li><b>Prove the paper&rarr;live path:</b> same Alpaca account, same API, same bot &mdash; going live is one endpoint flip, and only if the bar is met.</li>
+          <li><b>Every fill auditable:</b> one ledger, one append-only trade log, decisions made on the last <i>completed</i> close (no look-ahead).</li>
+        </ul>
+      </div>
+
+      <!-- WEEK 1 CHART -->
+      <div class="card c6">
+        <span class="k">First Week: Equity, Day by Day</span>
+        <div class="fig">
+        <svg viewBox="0 0 960 300" role="img" aria-label="Equity line: $1,000.00 on Sep 23, $1,005.16 on Sep 24, $1,006.29 on Sep 25">
+          <rect width="960" height="300" fill="#fafaf7"/>
+          <!-- gridlines -->
+          <line x1="80" y1="240" x2="920" y2="240" stroke="#d8d8d2" stroke-width="1"/>
+          <line x1="80" y1="180" x2="920" y2="180" stroke="#d8d8d2" stroke-width="1"/>
+          <line x1="80" y1="120" x2="920" y2="120" stroke="#d8d8d2" stroke-width="1"/>
+          <line x1="80" y1="60"  x2="920" y2="60"  stroke="#d8d8d2" stroke-width="1"/>
+          <!-- seed baseline -->
+          <line x1="80" y1="240" x2="920" y2="240" stroke="#9a9a94" stroke-width="1.5" stroke-dasharray="6 5"/>
+          <text x="86" y="258" font-size="12" fill="#8a8a84">seed $1,000.00</text>
+          <!-- y labels -->
+          <text x="72" y="64" font-size="12" fill="#8a8a84" text-anchor="end">$1,008</text>
+          <text x="72" y="124" font-size="12" fill="#8a8a84" text-anchor="end">$1,006</text>
+          <text x="72" y="184" font-size="12" fill="#8a8a84" text-anchor="end">$1,004</text>
+          <text x="72" y="244" font-size="12" fill="#8a8a84" text-anchor="end">$1,000</text>
+          <!-- area under line -->
+          <polygon points="80,240 80,240 500,105 920,72 920,240" fill="#4f8cff" opacity="0.12"/>
+          <!-- line: 1000.00 -> 1005.16 -> 1006.29 ; y = 240 - (eq-1000)*15 -->
+          <polyline points="80,240 500,105 920,72" fill="none" stroke="#4f8cff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="80" cy="240" r="6" fill="#4f8cff"/>
+          <circle cx="500" cy="105" r="6" fill="#4f8cff"/>
+          <circle cx="920" cy="72" r="7" fill="#2ed573" stroke="#1a7f4b" stroke-width="2"/>
+          <!-- point labels -->
+          <text x="80" y="222" font-size="13" fill="#5a5a54" text-anchor="middle" font-weight="700">$1,000.00</text>
+          <text x="500" y="88" font-size="13" fill="#5a5a54" text-anchor="middle" font-weight="700">$1,005.16</text>
+          <text x="920" y="55" font-size="14" fill="#1a7f4b" text-anchor="middle" font-weight="800">$1,006.29</text>
+          <!-- x labels -->
+          <text x="80" y="278" font-size="13" fill="#5a5a54" text-anchor="middle">Sep 23&#160;&#160;(day 0)</text>
+          <text x="500" y="278" font-size="13" fill="#5a5a54" text-anchor="middle">Sep 24&#160;&#160;(day 1)</text>
+          <text x="920" y="278" font-size="13" fill="#5a5a54" text-anchor="middle">Sep 25&#160;&#160;(day 2)</text>
+          <!-- gain annotation -->
+          <text x="86" y="120" font-size="14" fill="#1a7f4b" font-weight="800">+0.63% in first two trading days</text>
+        </svg>
+        <figcaption>Equity (paper $1,000 seed), end of each trading day. Day 1: four initial entries filled at the Sep 24 open. Day 2: trailing-stop trim on AMD, small adds to PLTR and AAPL. Y-axis starts at $1,000 to keep the small early moves visible.</figcaption>
+        </div>
+      </div>
+
+      <!-- WHAT WE'RE INVESTING IN -->
+      <div class="card c3">
+        <span class="k">What It's Buying</span>
+        <ul>
+          <li><b>Universe:</b> 28 liquid US names/ETFs (AAPL, NVDA, TSLA, PLTR, &#8230;), plus IBIT/ETHA as a crypto sleeve capped at 30%.</li>
+          <li><b>Long-only trend gate:</b> close &gt; 50-day SMA <i>and</i> 50-day &gt; 200-day SMA. No uptrend, no position.</li>
+          <li><b>Momentum:</b> rank by 21-day return, hold the top <b>&le;4</b>, equal ~$250 slots, no name &gt;35% of the account.</li>
+          <li><b>Stops:</b> ATR(14) &mdash; hard stop at entry &minus;2.5&middot;ATR, then a broker-side <b>24/7 trailing stop</b> that closes overnight gap risk.</li>
+        </ul>
+      </div>
+
+      <!-- CURRENT POSITIONS -->
+      <div class="card c3">
+        <span class="k">Positions &mdash; Sep 25 Close</span>
+        <table>
+          <tr><th>Name</th><th>Value</th><th>Entry &rarr; Mark</th></tr>
+          <tr><td>AAPL</td><td class="num">$253.76</td><td>$337.02 &rarr; $341.07</td></tr>
+          <tr><td>NVDA</td><td class="num">$252.30</td><td>$225.51 &rarr; $225.07</td></tr>
+          <tr><td>AMD</td><td class="num">$250.36</td><td>$614.61 &rarr; $630.63</td></tr>
+          <tr><td>PLTR</td><td class="num">$249.61</td><td>$191.79 &rarr; $189.67</td></tr>
+          <tr><td>Cash</td><td class="num">$0.27</td><td>&mdash;</td></tr>
+          <tr><td><b>Total</b></td><td class="num"><b>$1,006.29</b></td><td>+0.63% vs seed</td></tr>
+        </table>
+      </div>
+
+      <!-- RUNBOOK -->
+      <div class="card c6">
+        <span class="k">How It Runs, Day to Day</span>
+        <div class="statrow">
+          <div><b>9:45 AM CT</b><span>daily run (Mon&ndash;Fri)</span></div>
+          <div><b>last close</b><span>decision basis, no look-ahead</span></div>
+          <div><b>open fills</b><span>market orders at the open</span></div>
+          <div><b>24/7</b><span>broker-side trailing stops</span></div>
+        </div>
+        <div class="note">The bot reconciles yesterday's fills, re-scores the universe on the last completed close, rebalances to the target book with market orders, then re-places the trailing stops. Same code, same audit trail is what would run real money &mdash; one host change later.</div>
+      </div>
+    </div>
+
+    <div class="foot">
+      Paper account on Alpaca; every number from the bot's own ledger (state.json) and trade log, as of the Sep 25, 2026 close. Paper fills are optimistic by design &mdash; a known bias this experiment tracks, not hides. Not investment advice.
+    </div>
+  </figure>
+
+  <div class="read">
+    <div class="kick">In plain English</div>
+    <p>Every post on this blog is a snapshot. This one is a <b>live experiment</b>: for the next 90 days, an AI-run trading bot &mdash; not me making discretionary calls &mdash; manages a $1,000 virtual account, and I'll report what it actually does, with receipts.</p>
+    <p><b>The goals, stated up front so they can't move.</b> One: beat <b>10% annualized</b> on the seed &mdash; that's only ~$25 over 90 days, but the bot has to earn it through real entries and exits, not sit in cash. Two: <b>protect the seed</b> &mdash; if equity drops 5% from $1,000 the bot flattens and stands down for manual review; at &minus;20% the experiment is over. Three: prove the <b>paper-to-live path</b> &mdash; the exact same code, account, and API would trade real money with a one-line host change, and that change happens only if the bar is met.</p>
+    <p><b>What it's allowed to buy</b> is deliberately boring: 28 liquid US names, long-only, and only when the trend is up (price above its 50-day average and the 50-day above the 200-day). It ranks whatever qualifies by 21-day momentum, holds the top four in roughly equal ~$250 slots, and lets a broker-side 24/7 trailing stop &mdash; sized off ATR &mdash; get it out when a move dies. If the whole market breaks down (SPY under its 200-day), it halves deployed capital. No news watching, no mood swings, no second-guessing mid-day.</p>
+    <p><b>Where we are.</b> Day 2. The bot went to work at the Sep 24 open and filled all four initial positions &mdash; AMD, PLTR, AAPL, NVDA &mdash; at $1,005.16 by the close, then added $1.13 on Sep 25 to finish at <b>$1,006.29 (+0.63%)</b>, with a max drawdown of 0.33%. AMD already did the first "boring" thing worth noting: its trailing stop trimmed a sliver at the high instead of holding bag-holders' hope. That's the style: small, mechanical, repeatable &mdash; or it gets stopped out by the guardrails.</p>
+    <p>The honest caveat before you read too much into +0.63%: <b>two days is not a result</b>, and paper fills are optimistic (the bot logs every fill against the expected price to measure the bias). The verdict on 10% ARR needs the full 90 days &mdash; and then a longer look. I'll keep this post updated with the equity curve and a post at each milestone. The experiment, not the hype, is the story.</p>
+  </div>
+
+  <a class="back" href="../index.html">&#8592; Back to Investing blog</a>
+
+  <footer>Not investment advice. Paper-account results on Alpaca; numbers as of the Sep 25, 2026 close from the bot's ledger. This is an experiment log, not a recommendation.</footer>
+</div>
+</body>
+</html>
