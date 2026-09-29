@@ -26,9 +26,12 @@ a:hover{text-decoration:underline}
 .top a{color:var(--dim)}
 .top a:hover{color:var(--cyan)}
 .masthead{padding:40px 0 8px}
+@media(max-width:720px){.masthead{padding:28px 0 6px}.masthead h1{font-size:34px}}
 .kick{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
 h1{color:var(--ink);font-size:34px;letter-spacing:-.01em;margin:6px 0 8px;line-height:1.1}
+.masthead h1{font-size:48px;font-weight:800;letter-spacing:-.02em;margin:4px 0 10px;line-height:1.05}
 .tag{color:var(--sub);margin:0 0 30px;max-width:560px;font-size:15.5px}
+.tag .lead{color:var(--ink);font-weight:600}
 .post-block{margin:0 0 48px;border-bottom:1px solid var(--line);padding-bottom:40px}
 .toc{margin:0 0 8px;border:1px solid var(--line);border-radius:14px;padding:18px 16px 10px;background:var(--card)}
 .toc-kick{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);font-weight:700;margin-bottom:4px}
@@ -331,9 +334,8 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;color:v
   </div>
 
   <div class="masthead">
-    <div class="kick">The Compound · An investing blog</div>
-    <h1>Investing, explained with data</h1>
-    <p class="tag">Each post is one infographic — the numbers up front — plus a plain-English TL;DR. Index funds, dollar-cost averaging, and the boring math that compounds. Slowly, boringly, and on purpose.</p>
+    <h1>The Compound</h1>
+    <p class="tag"><span class="lead">Investing, explained with data.</span> Each post is one infographic — the numbers up front — plus a plain-English TL;DR. Index funds, dollar-cost averaging, and the boring math that compounds. Slowly, boringly, and on purpose.</p>
   </div>
 
   <nav class="toc">
