@@ -48,7 +48,7 @@ h1{color:var(--ink);font-size:34px;letter-spacing:-.01em;margin:6px 0 8px;line-h
 .hamb{position:fixed;top:12px;left:14px;z-index:70;width:42px;height:42px;padding:11px 10px 8px;display:flex;flex-direction:column;justify-content:space-between;align-items:stretch;background:var(--card);border:1px solid var(--line);border-radius:10px;cursor:pointer}
 .hamb span{display:block;height:2.5px;border-radius:2px;background:var(--ink)}
 .hamb span:first-child{background:var(--cyan)}
-.drawer{position:fixed;top:0;right:0;bottom:0;width:min(320px,88vw);z-index:60;transform:translateX(105%);transition:transform .22s ease-in-out;background:var(--bg);border-left:1px solid var(--line);box-shadow:-16px 0 32px rgba(0,0,0,.45);padding:14px 16px 26px;overflow-y:auto}
+.drawer{position:fixed;top:0;left:0;bottom:0;width:min(320px,88vw);z-index:60;transform:translateX(-105%);transition:transform .22s ease-in-out;background:var(--bg);border-right:1px solid var(--line);box-shadow:16px 0 32px rgba(0,0,0,.45);padding:14px 16px 26px;overflow-y:auto}
 body.nav-open .drawer{transform:none}
 .drawer-close{position:absolute;top:8px;right:8px;width:36px;height:36px;padding:0 0 8px;display:flex;flex-direction:column;justify-content:space-between;align-items:stretch;background:transparent;border:0;border-radius:8px;cursor:pointer}
 .drawer-close span{display:block;height:2.5px;border-radius:2px;background:var(--sub)}
