@@ -621,6 +621,62 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;color:v
 .p9 .kpis{grid-template-columns:repeat(2,1fr)}
 .p9 .inf .card{overflow-x:auto}
 }
+
+.p10{--bg:#0b1220;--card:#111c30;--line:#22304a;--ink:#e8eef7;--sub:#93a4bc;--dim:#5d6f8a;--cyan:#38bdf8;}
+.p10 *{box-sizing:border-box}
+.p10{margin:0;background:var(--bg);color:var(--sub);font-family:-apple-system,system-ui,"Segoe UI",Roboto,sans-serif;font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.p10 a{color:var(--cyan);text-decoration:none}
+.p10 a:hover{text-decoration:underline}
+.p10 .wrap{max-width:760px;margin:0 auto;padding:0 18px 70px}
+.p10 header.post{padding:34px 0 22px;border-bottom:1px solid var(--line);margin-bottom:28px}
+.p10 h1{color:var(--ink);font-size:27px;line-height:1.2;margin:0 0 12px;letter-spacing:-.02em}
+.p10 .sub{color:var(--sub);font-size:14.5px;margin:0}
+.p10 .sub b{color:var(--ink)}
+.p10 h2{color:var(--ink);font-size:20px;margin:34px 0 14px;letter-spacing:-.01em}
+.p10 h3{color:var(--ink);font-size:16px;margin:24px 0 10px}
+.p10 p{margin:0 0 14px;font-size:14.5px;color:#c3cede}
+.p10 strong,.p10 b{color:var(--ink)}
+.p10 ul,.p10 ol{padding-left:20px;margin:0 0 16px}
+.p10 li{margin-bottom:8px;font-size:13.5px;color:#aab6d0}
+.p10 li b,.p10 li strong{color:var(--ink)}
+.p10 .callout{border-radius:12px;padding:14px 16px;margin:18px 0;border:1px solid var(--line)}
+.p10 .callout .lbl{font-weight:700;font-size:12px;letter-spacing:.05em;text-transform:uppercase;display:block;margin-bottom:6px}
+.p10 .callout p{margin:0;font-size:13.5px}
+.p10 .callout.warn{background:#33201a;border-color:#5a3a2a}
+.p10 .callout.warn .lbl{color:#ff9d85}
+.p10 .callout.ok{background:#12281c;border-color:#1e4a30}
+.p10 .callout.ok .lbl{color:#5fe08a}
+.p10 .callout.info{background:#0f1f3a;border-color:#1e3a5f}
+.p10 .callout.info .lbl{color:var(--cyan)}
+.p10 .fig{margin:22px 0}
+.p10 .fig .frame{background:#fafaf7;border:1px solid var(--line);border-radius:12px;padding:14px}
+.p10 .fig .frame svg{max-width:100%;height:auto;display:block;margin:0 auto}
+.p10 .fig .cap{color:#8a97b0;font-size:13px;margin:10px 2px 0;line-height:1.5}
+.p10 .fig .cap strong,.p10 .fig .cap b{color:var(--ink)}
+.p10 table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px}
+.p10 th,.p10 td{padding:7px 9px;border-bottom:1px solid #2a3a5a;text-align:right;color:#aab6d0;font-variant-numeric:tabular-nums}
+.p10 th:first-child,.p10 td:first-child{text-align:left}
+.p10 th{color:#aab6d0;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.03em;border-bottom:2px solid #2a3a5a}
+.p10 td:first-child{color:var(--ink);font-weight:600}
+.p10 tbody tr:last-child td{border-bottom:none}
+.p10 td.bad{color:#ff8f6b;font-weight:700}
+.p10 td.good{color:#5fe08a;font-weight:700}
+.p10 .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;background:#151f33;color:#c3cede;padding:1px 5px;border-radius:5px}
+.p10 .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
+.p10 .cols .col{background:#151f33;border:1px solid #2a3a5a;border-radius:12px;padding:16px 18px}
+.p10 .cols .col h3{margin:0 0 10px}
+.p10 .cols .col ol{margin-bottom:0;padding-left:18px}
+.p10 .cols .col li{font-size:13.5px;margin-bottom:10px}
+.p10 .foot{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);color:#8a97b0;font-size:13px;line-height:1.5}
+.p10 .foot p{margin:0 0 8px;font-size:13px;color:#8a97b0}
+.p10 .sources li{font-size:13px;margin-bottom:6px}
+@media (max-width:600px){
+.p10 h1{font-size:23px}
+.p10 .wrap{padding:0 16px 60px}
+.p10 .fig .frame{padding:12px}
+.p10 .cols{grid-template-columns:1fr}
+}
+
 </style>
 </head>
 <body>
@@ -629,6 +685,11 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;color:v
   <button class="drawer-close" id="drawerClose" type="button" aria-label="Close posts menu"><span></span><span></span><span></span></button>
   <div class="toc">
     <div class="toc-kick">Posts</div>
+    <a class="toc-item" href="#p10">
+      <span class="t">When Do the Next Auction Windows Open? 2-Year Note &amp; TIPS, Dated</span>
+      <span class="d">October 10, 2026 &middot; auction calendar</span>
+      <span class="s">Three windows in six weeks &mdash; 5-yr TIPS Oct 22 (settles Oct 30), 2-yr note Oct 26 (settles Nov 2), 10-yr TIPS Nov 19 (settles Nov 30). Bid non-competitive at TreasuryDirect ($100 min) or a Vanguard brokerage account ($1,000 min) &mdash; both $0 fee on the order. Two gotchas: fund on the issue date, not bid day, and you take whatever clearing yield the auction sets.</span>
+    </a>
     <a class="toc-item" href="#p9">
       <span class="t">Is Now a Good Time to Buy Treasuries and TIPS?</span>
       <span class="d">October 10, 2026 &middot; live snapshot</span>
@@ -992,6 +1053,180 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;color:v
 </div>
 </section>
 
+<section class="p10" id="p10">
+<div class="wrap">
+
+<header class="post">
+  <h1>When Do the Next Auction Windows Open? 2-Year Note &amp; TIPS, Dated</h1>
+  <p class="sub"><b>Short version:</b> three windows matter in the next six weeks — <b>5-year TIPS on Thursday, Oct 22</b>, <b>2-year note on Monday, Oct 26</b>, and <b>10-year TIPS on Thursday, Nov 19</b> (all 2026). You can't bid early: the order only exists for the auction day, and your money moves on the issue date, not the bid date. Below is the calendar, both places to bid (TreasuryDirect and a Vanguard brokerage account — yes, both work), and the two gotchas.</p>
+</header>
+
+<div class="callout info">
+  <span class="lbl">What an auction actually is</span>
+  <p>The Treasury sells new Treasuries and TIPS at fixed dates, not continuously. On the auction day, everyone who wants that exact issue submits a bid; the Treasury sets one clearing yield, and every non-competitive bidder gets the security at that yield. If you want the <em>specific</em> 2-year note or 5-year TIPS — not "TIPS-ish" fund shares — you bid the auction. That's why "when does the next window open" has a real calendar answer.</p>
+</div>
+
+<div class="fig">
+  <div class="frame"><svg viewBox="0 0 960 470" role="img" aria-label="Timeline of the three upcoming auction windows: 5-year TIPS auction Oct 22 issue Oct 30, 2-year note auction Oct 26 issue Nov 2, 10-year TIPS auction Nov 19 issue Nov 30, plus a bid-instructions strip">
+<rect width="960" height="470" fill="#fafaf7"/>
+<text x="80" y="34" font-size="17" fill="#2a2a24" font-weight="700">Upcoming auction windows — Oct 10 → Nov 30, 2026</text>
+<text x="80" y="54" font-size="12" fill="#8a8a84">You bid at auction (dot); the security lands in your account on the issue date (diamond).</text>
+<line x1="80" y1="92" x2="930" y2="92" stroke="#b8b8b2" stroke-width="1"/>
+<line x1="163.3" y1="92" x2="163.3" y2="97" stroke="#b8b8b2"/>
+<text x="163.3" y="110" font-size="11" fill="#5a5a54" text-anchor="middle">Oct 15</text>
+<line x1="280.0" y1="92" x2="280.0" y2="97" stroke="#b8b8b2"/>
+<text x="280.0" y="110" font-size="11" fill="#5a5a54" text-anchor="middle">Oct 22</text>
+<line x1="346.7" y1="92" x2="346.7" y2="97" stroke="#b8b8b2"/>
+<text x="346.7" y="110" font-size="11" fill="#5a5a54" text-anchor="middle">Oct 26</text>
+<line x1="413.3" y1="92" x2="413.3" y2="97" stroke="#b8b8b2"/>
+<text x="413.3" y="110" font-size="11" fill="#5a5a54" text-anchor="middle">Oct 30</text>
+<line x1="463.3" y1="92" x2="463.3" y2="97" stroke="#b8b8b2"/>
+<text x="463.3" y="110" font-size="11" fill="#5a5a54" text-anchor="middle">Nov 2</text>
+<line x1="563.3" y1="92" x2="563.3" y2="97" stroke="#b8b8b2"/>
+<text x="563.3" y="110" font-size="11" fill="#5a5a54" text-anchor="middle">Nov 8</text>
+<line x1="746.7" y1="92" x2="746.7" y2="97" stroke="#b8b8b2"/>
+<text x="746.7" y="110" font-size="11" fill="#5a5a54" text-anchor="middle">Nov 19</text>
+<line x1="930.0" y1="92" x2="930.0" y2="97" stroke="#b8b8b2"/>
+<text x="930.0" y="110" font-size="11" fill="#5a5a54" text-anchor="middle">Nov 30</text>
+<text x="80" y="110" font-size="11" fill="#5a5a54" text-anchor="middle">Oct 10</text>
+<text x="80" y="123" font-size="10.5" fill="#8fa0bd" text-anchor="middle" font-weight="700">today</text>
+<rect x="66" y="127" width="878" height="54" rx="10" fill="#ffffff" stroke="#e3e3dc"/>
+<text x="80" y="145" font-size="13" fill="#2a2a24" font-weight="700">5-Year TIPS</text>
+<line x1="280.0" y1="163" x2="413.3" y2="163" stroke="#4f8cff" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="280.0" cy="163" r="6.5" fill="#4f8cff"/>
+<path d="M413.3 156 L420.3 163 L413.3 170 L406.3 163 Z" fill="#fff" stroke="#4f8cff" stroke-width="2"/>
+<text x="280.0" y="184" font-size="11" fill="#5a5a54" text-anchor="middle" font-weight="600">bid Oct 22</text>
+<text x="413.3" y="184" font-size="11" fill="#5a5a54" text-anchor="middle" font-weight="600">settles Oct 30</text>
+<rect x="66" y="189" width="878" height="54" rx="10" fill="#ffffff" stroke="#e3e3dc"/>
+<text x="80" y="207" font-size="13" fill="#2a2a24" font-weight="700">2-Year Note (nominal)</text>
+<line x1="346.7" y1="225" x2="463.3" y2="225" stroke="#e8543f" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="346.7" cy="225" r="6.5" fill="#e8543f"/>
+<path d="M463.3 218 L470.3 225 L463.3 232 L456.3 225 Z" fill="#fff" stroke="#e8543f" stroke-width="2"/>
+<text x="346.7" y="246" font-size="11" fill="#5a5a54" text-anchor="middle" font-weight="600">bid Oct 26</text>
+<text x="463.3" y="246" font-size="11" fill="#5a5a54" text-anchor="middle" font-weight="600">settles Nov 2</text>
+<rect x="66" y="251" width="878" height="54" rx="10" fill="#ffffff" stroke="#e3e3dc"/>
+<text x="80" y="269" font-size="13" fill="#2a2a24" font-weight="700">10-Year TIPS</text>
+<line x1="746.7" y1="287" x2="930.0" y2="287" stroke="#2f9e6a" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="746.7" cy="287" r="6.5" fill="#2f9e6a"/>
+<path d="M930.0 280 L937.0 287 L930.0 294 L923.0 287 Z" fill="#fff" stroke="#2f9e6a" stroke-width="2"/>
+<text x="746.7" y="308" font-size="11" fill="#5a5a54" text-anchor="middle" font-weight="600">bid Nov 19</text>
+<text x="930.0" y="308" font-size="11" fill="#5a5a54" text-anchor="middle" font-weight="600">settles Nov 30</text>
+<rect x="66" y="312" width="878" height="104" rx="12" fill="#151f33" stroke="#2a3a5a"/>
+<text x="84" y="336" font-size="13" fill="#e8eef7" font-weight="700">Bid non-competitively — you get the auction yield. Min: $100 (TreasuryDirect) or $1,000 (Vanguard). No commission either way.</text>
+<text x="88" y="360" font-size="12" fill="#aab6d0">5-Year TIPS</text>
+<text x="88" y="380" font-size="14" fill="#ffffff" font-weight="700">bid Thu Oct 22</text>
+<text x="88" y="400" font-size="10.5" fill="#8fa0bd">CUSIP 91282CRR4 · settles Oct 30</text>
+<text x="370" y="360" font-size="12" fill="#aab6d0">2-Year Note</text>
+<text x="370" y="380" font-size="14" fill="#ffffff" font-weight="700">bid Mon Oct 26</text>
+<text x="370" y="400" font-size="10.5" fill="#8fa0bd">announced Oct 22 · settles Nov 2</text>
+<text x="650" y="360" font-size="12" fill="#aab6d0">10-Year TIPS</text>
+<text x="650" y="380" font-size="14" fill="#ffffff" font-weight="700">bid Thu Nov 19</text>
+<text x="650" y="400" font-size="10.5" fill="#8fa0bd">monthly-ish cadence · settles Nov 30</text>
+</svg></div>
+  <p class="cap">The three upcoming windows. You <strong>bid on the auction date</strong> (dot) and the security settles into your account on the <strong>issue date</strong> (diamond) — a few days later, not the next day. 5-yr TIPS date is live-confirmed from the TreasuryDirect feed; the 2-yr note and 10-yr TIPS dates come from the Treasury's official tentative schedule (the 2-yr note gets its official announcement Oct 22 and lands in the live calendar then).</p>
+</div>
+
+<h2>The calendar</h2>
+<table>
+  <thead><tr><th>Security</th><th>Auction day</th><th>Settles (issue)</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr><td>5-Year TIPS</td><td>Thu, Oct 22, 2026</td><td>Fri, Oct 30, 2026</td><td class="good">live in TreasuryDirect feed</td></tr>
+    <tr><td>2-Year note (nominal)</td><td>Mon, Oct 26, 2026</td><td>Mon, Nov 02, 2026</td><td>tentative schedule — announced Oct 22</td></tr>
+    <tr><td>10-Year TIPS</td><td>Thu, Nov 19, 2026</td><td>Mon, Nov 30, 2026</td><td>tentative schedule (10-yr TIPS run ~monthly)</td></tr>
+  </tbody>
+</table>
+<p class="cap" style="color:var(--muted);font-size:13.5px;">5-yr TIPS CUSIP 91282CRR4, announced for a Thu Oct 15 announcement. All dates 2026, verified Oct 10 against the TreasuryDirect upcoming-auctions JSON feed and the Treasury's tentative 6-month auction schedule.</p>
+
+<p>Two practical details. The <strong>auction day is the only day you can bid</strong> — there is no early-bird window, and you don't "reserve" a slot in advance. And <strong>money moves on the issue date</strong>: your bid on Oct 22 is paid when the security settles on Oct 30, so have the funds available then (more on settlement below).</p>
+
+<h2>Where to bid: TreasuryDirect vs a Vanguard brokerage account</h2>
+<p>Both work, and both are fee-free on the auction itself. The difference is minimums and where the security ends up.</p>
+
+<table>
+  <thead><tr><th></th><th>TreasuryDirect</th><th>Vanguard brokerage</th></tr></thead>
+  <tbody>
+    <tr><td>Bid type</td><td>Non-competitive only</td><td>Non-competitive (same auction, same clearing yield)</td></tr>
+    <tr><td>Minimum</td><td class="good">$100, $100 increments</td><td>$1,000, $1,000 increments</td></tr>
+    <tr><td>Max per auction</td><td>$10,000,000</td><td>$5,000,000</td></tr>
+    <tr><td>Fees</td><td class="good">$0 account &amp; purchase fees</td><td class="good">$0 commission on new-issue orders</td></tr>
+    <tr><td>Where it lands</td><td>In your TreasuryDirect account (book-entry)</td><td>In your Vanguard account, to maturity or sold</td></tr>
+    <tr><td>Also available</td><td>All marketable Treasuries, I-Bonds</td><td>Same auction <em>plus</em> TIPS funds (VTP, VTIP) if you'd rather not manage single issues</td></tr>
+  </tbody>
+</table>
+
+<div class="cols">
+  <div class="col">
+    <h3>Route 1 — TreasuryDirect (lowest minimum)</h3>
+    <ol>
+      <li>Have a TreasuryDirect account (free) and a linked checking account.</li>
+      <li>On auction day: <span class="mono">Buy &amp; Sell → Purchase Treasuries</span>, pick the security (e.g., the 5-yr TIPS).</li>
+      <li>Bid <strong>non-competitive</strong> — the only bid type for individuals on this site. You accept whatever yield the auction sets.</li>
+      <li>Enter the amount: $100 minimum, then $100 steps (e.g., $2,500).</li>
+      <li>Submit before the non-competitive close (11:00 AM ET for bills; notes/TIPS close times are stated in that auction's announcement — check it the day of).</li>
+      <li>Result: security is deposited on the <strong>issue date</strong>; payment comes from your linked account that day. Bid results are visible after 5 PM ET on auction day.</li>
+    </ol>
+  </div>
+  <div class="col">
+    <h3>Route 2 — Vanguard brokerage (the one people think doesn't exist)</h3>
+    <ol>
+      <li>Log in to your <strong>brokerage</strong> account (the brokerage interface, not the mutual-fund/IRA-only view).</li>
+      <li><span class="mono">Buy &amp; Sell → Fixed Income → Treasuries → Auction</span> — new-issue Treasuries <em>and</em> new-issue TIPS are orderable here. (The TIPS order screen is in the TIPS section, up for the day before/auction day.)</li>
+      <li>Enter the amount: $1,000 minimum, $1,000 increments. Non-competitive — same auction yield as everyone else.</li>
+      <li>No commission, no fee on the new-issue order (fees only apply if you later trade it in the secondary market). No auto-roll feature at Vanguard.</li>
+      <li>Settles on the issue date into your account; hold to maturity or sell later.</li>
+    </ol>
+  </div>
+</div>
+
+<p>Which one? <strong>TreasuryDirect</strong> if your position is small ($100 minimum, and it's the only place for I-Bonds later). <strong>Vanguard</strong> if you're already there and want the specific issue alongside the rest of your portfolio — or if you'd rather skip single issues entirely and buy a TIPS fund: <span class="mono">VTP</span> (total TIPS market, all maturities, the closest thing to a "Vanguard TIPS ETF") or <span class="mono">VTIP</span> (short-term TIPS, under 5 years). Funds trade any day at market price; they don't bid the auction for you.</p>
+
+<div class="callout warn">
+  <span class="lbl">Gotcha 1 — it settles on the issue date, not the day after you bid</span>
+  <p>You bid Oct 22; the money leaves and the security arrives on the <strong>issue date, Oct 30</strong>. The gap is a few days for these auctions (T-bill-style T+1 settlement is the secondary-market story — when you buy an existing Treasury mid-day at a broker, it settles one business day later). Plan the funding for the issue date, not the bid date, and don't count on the security existing until settlement. If your bank account is short on issue day, the order can fail after the auction is already over.</p>
+</div>
+
+<div class="callout warn">
+  <span class="lbl">Gotcha 2 — non-competitive means you don't pick the yield; the market does</span>
+  <p>You get the clearing yield the auction sets — whatever that turns out to be on the day. If yields have <em>risen</em> by auction day (rates up), you actually get a <strong>better</strong> yield than the one quoted when you read this post; if yields have fallen, you get the lower one. There's no price slippage and no rejection of a non-competitive bid, but there's no locking a yield in advance either. That's the trade for skipping the competitive bid: certainty of filling, uncertainty of the exact rate. (Competitive bids — where you name your yield — exist, but they go through a bank/broker/dealer, cap out at 35% of the offering, and aren't available on TreasuryDirect.)</p>
+</div>
+
+<h2>So, in plain English</h2>
+<ul>
+  <li><strong>Want the 5-yr TIPS?</strong> Thursday, Oct 22, 2026 — it's the next window, and it's already live in the TreasuryDirect calendar.</li>
+  <li><strong>Want the 2-yr note?</strong> Monday, Oct 26, 2026. Four days after the TIPS; it's on the official tentative schedule and gets formally announced Oct 22.</li>
+  <li><strong>Want the 10-yr TIPS?</strong> Thursday, Nov 19, 2026 — next month. 10-year TIPS run roughly monthly, so there will be another window soon after.</li>
+  <li><strong>How:</strong> TreasuryDirect from $100, or a Vanguard brokerage account from $1,000 — both non-competitive, both $0 fee on the order. Have the cash ready for the <em>issue</em> date, and understand you're buying at whatever yield the auction sets that day.</li>
+</ul>
+
+<div class="callout ok">
+  <span class="lbl">Bottom line</span>
+  <p>The windows aren't mysterious — there's a calendar, and the next one opens <strong>Oct 22</strong>. The only real constraints are: bid on the day, fund it a few days later on the issue date, and accept the auction's clearing yield. If you'd rather have TIPS exposure without standing by the calendar, <span class="mono">VTP</span> or <span class="mono">VTIP</span> gets you there any trading day — but you own a basket, not a dated issue.</p>
+</div>
+
+<div class="callout info">
+  <span class="lbl">Honest caveats</span>
+  <p>Dates verified 2026-10-10 against the live TreasuryDirect upcoming-auctions JSON feed (5-yr TIPS: confirmed) and the Treasury's tentative 6-month auction schedule PDF (2-yr note, 10-yr TIPS). The 2-yr note and 10-yr TIPS dates can shift if Treasury moves the schedule — the 2-yr note's official announcement lands Oct 22, which is the confirmation date. Bid close times vary by auction and are stated in each auction's announcement. I did not find a public "VBTPX"-style Vanguard TIPS ETF under that exact ticker — Vanguard's TIPS ETFs are <span class="mono">VTP</span> (total) and <span class="mono">VTIP</span> (short-term); <span class="mono">VAIPX/VIPSX</span> is the actively managed mutual fund version, not an ETF. This is a how-to, not a yield forecast — the auction yield is whatever the auction sets.</p>
+</div>
+
+<h2>How I got the dates</h2>
+<p>Live feed: TreasuryDirect's upcoming-auctions JSON (<span class="mono">treasurydirect.gov/TA_WS/securities/upcoming</span>, TIPS/Bond/Bill/Note types), pulled 2026-10-10 — the 5-yr TIPS auction appears there with CUSIP and terms. The 2-yr note and 10-yr TIPS dates come from the Treasury's <em>Tentative 6-Month Auction Schedule</em> PDF (published 2026-08-04); note auctions appear in the live feed only when announced (~5 business days ahead). Bid mechanics (non-competitive max, $100 minimum on TreasuryDirect, issue-date settlement, fee-free): TreasuryDirect "How Auctions Work" and "Buying a Treasury Marketable Security." Vanguard route (brokerage-account auction orders, $1,000 minimum, $1,000 increments, $5M max, no commission; TIPS funds VTP/VTIP/VAIPX): Vanguard's U.S. Treasury securities and bond product pages, The Finance Buff, Bogleheads, and Fidelity's auction-ordering guide as a cross-check.</p>
+
+<div class="foot">
+  <p style="margin-bottom:8px;"><strong>Sources</strong></p>
+  <ol class="sources">
+    <li>TreasuryDirect live upcoming auctions (JSON feed), pulled 2026-10-10. <a href="https://www.treasurydirect.gov/TA_WS/securities/upcoming?format=json&amp;limitByTerm=true&amp;type=TIPS">treasurydirect.gov/TA_WS/securities/upcoming</a></li>
+    <li>U.S. Treasury, <em>Tentative 6-Month Auction Schedule</em> (2026-08-04). <a href="https://home.treasury.gov/system/files/221/Tentative-Auction-Schedule.pdf">home.treasury.gov (PDF)</a></li>
+    <li>TreasuryDirect, <em>How Auctions Work</em>. <a href="https://www.treasurydirect.gov/auctions/how-auctions-work/">treasurydirect.gov/auctions/how-auctions-work/</a></li>
+    <li>TreasuryDirect, <em>When Auctions Happen</em>. <a href="https://www.treasurydirect.gov/auctions/when-auctions-happen/">treasurydirect.gov/auctions/when-auctions-happen/</a></li>
+    <li>Vanguard, <em>U.S. Treasury Securities: Bonds, Bills &amp; More</em>. <a href="https://investor.vanguard.com/investment-products/bonds">investor.vanguard.com/investment-products/bonds</a></li>
+    <li>The Finance Buff, <em>How To Buy Treasury Bills &amp; Notes Without Fee at Online Brokers</em> (Vanguard: $1,000 min, $1,000 increments, $5M max, no fee). <a href="https://thefinancebuff.com/treasury-bonds/buy-treasury-bills.html">thefinancebuff.com</a></li>
+    <li>Bogleheads, <em>Can new-issue TIPS be bought at Fidelity/Schwab/Vanguard?</em> (yes — TIPS &amp; Auction section). <a href="https://www.bogleheads.org/forum/">bogleheads.org</a></li>
+    <li>Fidelity, <em>How to Trade Auction Treasury Securities/TIPS</em> (PDF; confirms same auction route at a broker). <a href="https://www.fidelity.com/">fidelity.com</a></li>
+  </ol>
+  <p style="margin-top:14px;">Written with Hermes Agent · Local model · Not investment advice — your time horizon, taxes, and comfort are your own.</p>
+</div>
+</div>
+</section>
 <section class="p7" id="p7">
 <div class="wrap">
 
