@@ -746,10 +746,10 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;color:v
 .p12 .sub b{color:var(--ink)}
 .p12 a{color:var(--cyan);text-decoration:none}
 .p12 a:hover{text-decoration:underline}
-.p12 .tool-frame{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fafaf7;box-shadow:0 1px 3px rgba(0,0,0,.3)}
-.p12 .tool-frame iframe{display:block;width:100%;border:0;height:1000px}
+.p12 .tool-link{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:22px;text-align:center}
+.p12 .btn{display:inline-block;background:var(--cyan);color:#0b1220;font-weight:700;font-size:16px;padding:12px 24px;border-radius:999px;text-decoration:none}
+.p12 .btn:hover{text-decoration:none;filter:brightness(1.1)}
 .p12 .cap{color:var(--dim);font-size:13px;margin:12px 2px 0;line-height:1.5}
-@media(max-width:600px){.p12 .tool-frame iframe{height:880px}}
 </style>
 </head>
 <body>
@@ -846,10 +846,10 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;color:v
   <h1>Bond Tent Calculator &mdash; Your Bond % at Every Age</h1>
   <p class="sub"><b>Interactive tool &middot; Part 3 of the bond-percent series.</b> Enter your age today and your planned retirement age, and get your recommended bond % at every age from today to 90 &mdash; the long-run band, the ramp up to the 55% bond-tent peak, and the taper back down. Built from the same 47 years of data as Part 1.</p>
 </header>
-<div class="tool-frame">
-  <iframe src="https://link744.github.io/investing/posts/bond-tent-calculator.html" title="Bond Tent Calculator" loading="lazy"></iframe>
+<div class="tool-link">
+  <a class="btn" href="https://link744.github.io/investing/posts/bond-tent-calculator.html">Open the Bond Tent Calculator &rarr;</a>
 </div>
-<p class="cap">Self-contained tool &mdash; no account, no data requests, runs in your browser. Try your own two numbers; the amber rows are the bond tent (&plusmn;5 yrs around retirement).</p>
+<p class="cap">The tool lives on its own page &mdash; no account, no data requests, runs in your browser. Enter your age today and your planned retirement age; the amber rows are the bond tent (&plusmn;5 yrs around retirement).</p>
 </div>
 </section>
 
@@ -894,6 +894,11 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;color:v
     </table>
   </div>
   <p class="cap"><strong>The matrix.</strong> Cell = recommended % of your retirement portfolio in bonds <strong>on the retirement date</strong>. Rows = your age today; columns = planned retirement age. <strong>Bold blue</strong> cells are the <strong>bond-tent peak (55%)</strong> — you're within about five years of your planned retirement, inside the sequence-risk red zone. Every other non-blank cell is the <strong>long-run band</strong> (30–50%). <strong>Blank (—)</strong> = planned retirement age ≤ your age today — not applicable.</p>
+</div>
+
+<div class="callout info">
+  <span class="lbl">Try your own two numbers</span>
+  <p>Plug your own numbers into the <a href="https://link744.github.io/investing/posts/bond-tent-calculator.html"><strong>Bond Tent Calculator</strong></a> (Part 3 of the series) — enter your age today and your planned retirement age, and get your recommended bond % at every age from today to 90: the long-run band, the ramp up to the 55% bond-tent peak, and the taper back down. The matrix above is one snapshot of that table, at the retirement date; the tool is the whole path.</p>
 </div>
 
 <h2>How to read it</h2>
