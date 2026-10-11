@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Compound — Investing, Explained With Data</title>
-<meta name="description" content="The Compound: an investing blog with zero hype. Each post is one infographic — bond yields, the VIX, inflation, index-fund math — with a plain-English TL;DR. Built for building wealth: slowly, boringly, and on purpose.">
-<meta name="author" content="The Compound">
+<title>This Blog Is Not Investment Advice — Investing, Explained With Data</title>
+<meta name="description" content="This Blog Is Not Investment Advice: an investing blog with zero hype. Each post is one infographic — bond yields, the VIX, inflation, index-fund math — with a plain-English TL;DR. Built for building wealth: slowly, boringly, and on purpose.">
+<meta name="author" content="This Blog Is Not Investment Advice">
 <meta name="theme-color" content="#0b1220">
 <meta name="keywords" content="investing, index funds, dollar-cost averaging, bond yields, 10-year treasury, VIX, backtest, inflation, compounding, personal finance">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="The Compound">
-<meta property="og:title" content="The Compound — Investing, Explained With Data">
+<meta property="og:site_name" content="This Blog Is Not Investment Advice">
+<meta property="og:title" content="This Blog Is Not Investment Advice — Investing, Explained With Data">
 <meta property="og:description" content="One infographic per post, then a plain-English TL;DR. Bonds, the VIX, inflation, and the boring math of compounding — no hype, no advice you didn't ask for.">
 <meta property="og:url" content="https://link744.github.io/investing/">
 <link rel="canonical" href="https://link744.github.io/investing/">
@@ -27,7 +27,8 @@ a:hover{text-decoration:underline}
 .top a{color:var(--dim)}
 .top a:hover{color:var(--cyan)}
 .masthead{padding:40px 0 8px}
-@media(max-width:720px){.masthead{padding:28px 0 6px}.masthead h1{font-size:34px}}
+.masthead .logo{display:block;margin-bottom:14px}
+@media(max-width:720px){.masthead{padding:28px 0 6px}.masthead h1{font-size:34px}.masthead .logo{width:44px;height:44px}}
 .kick{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
 h1{color:var(--ink);font-size:34px;letter-spacing:-.01em;margin:6px 0 8px;line-height:1.1}
 .masthead h1{font-size:48px;font-weight:800;letter-spacing:-.02em;margin:4px 0 10px;line-height:1.05}
@@ -882,7 +883,14 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;color:v
 </nav>
 <div class="wrap">
   <div class="masthead">
-    <h1>The Compound</h1>
+    <svg class="logo" width="54" height="54" viewBox="0 0 48 48" role="img" aria-label="Not investment advice — a rising bar chart with a line through it">
+      <circle cx="24" cy="24" r="21.5" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+      <rect x="13" y="27" width="6" height="10" rx="1" fill="#38bdf8"/>
+      <rect x="21" y="21" width="6" height="16" rx="1" fill="#38bdf8"/>
+      <rect x="29" y="14" width="6" height="23" rx="1" fill="#38bdf8"/>
+      <line x1="11" y1="38" x2="37" y2="11" stroke="#e8eef7" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+    <h1>This Blog Is Not<br>Investment Advice</h1>
     <p class="tag"><span class="lead">Investing, explained with data.</span> Each post is one infographic — the numbers up front — plus a plain-English TL;DR. Index funds, dollar-cost averaging, and the boring math that compounds. Slowly, boringly, and on purpose.</p>
   </div>
 
@@ -1284,7 +1292,7 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;color:v
     <p>The "age = bond %" rule fails at every age I tested: a 75-year-old in 75% bonds historically earns <b>34% less</b> than 60/40 ($4.71 vs $7.15 per $1 over 20 years) <i>and</i> gets a <b>worse floor</b> ($2.58 vs $3.37 worst-5%), not a better one &mdash; because the 13.9% drawdown it is "buying" is already small at 60/40, and 30/70 actually makes it worse (17.9%). What the data supports instead: a <b>bond tent</b> (30&ndash;50% at retirement, peaking near the date, tapering down) plus a <b>5&ndash;10% cash/T-bill bucket</b> &mdash; the one piece that actually survived 2022, the only both-negative year in 47.</p>
   </div>
 
-  <footer>Published October 10, 2026 &middot; The Compound &middot; 47 years of U.S. data (1979&ndash;2025) &mdash; not investment advice</footer>
+  <footer>Published October 10, 2026 &middot; This Blog Is Not Investment Advice &middot; 47 years of U.S. data (1979&ndash;2025) &mdash; not investment advice</footer>
 
 </div>
 </section>
@@ -1402,7 +1410,7 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;color:v
     <p><b>How to use it, concretely:</b> split the money by what you&rsquo;d actually do with it. The cash-like portion &mdash; the stuff you don&rsquo;t want to lock into a price swing &mdash; goes into a <b>1-year T-bill ladder at 4.62%</b>, zero price risk, redeployed annually. The core long-money goes into <b>10-year TIPS</b> (2.89% real locked), or 30-year TIPS if you&rsquo;re genuinely holding a decade or more and can stomach a ~15% price swing if rates rise. Nominal Treasuries make sense <i>only</i> if you actually believe the Fed&rsquo;s own base case &mdash; inflation falling to 2.3% by 2027 &mdash; because then the nominal&rsquo;s higher coupon is pure win. <b>VBTLX</b> is the hands-off alternative (one fund, ~4.5&ndash;4.6%, duration 5.7) and <b>I-Bonds</b> are the $10k/year garnish: 4.26% composite, state-tax-exempt, real return floored at zero, but capped and locked so they can&rsquo;t be a core position.</p>
     <p><b>The catch &mdash; and it cuts both directions.</b> Everyone&rsquo;s instinct is &ldquo;buy long and ride it down,&rdquo; but that framing assumes rates can only fall. Right now they can&rsquo;t be assumed to do either: the Fed <i>just hiked</i> (target is 3.75&ndash;4.00% after Sept 16), and the median Fed participant still expects the 2026 dot at <b>4.1%</b> &mdash; that&rsquo;s <i>one more hike</i>, then a long hold. The market prices only ~16&ndash;18% odds of a hike at the very next meeting (Oct 28), but the median dot is the honest prior. So the live duration risk is to the <b>upside</b>: if rates rise 100bp, a 10-year&rsquo;s price drops ~8.5% &mdash; including in TIPS, because locking in the real yield does <i>not</i> lock in the price. That&rsquo;s the trade you&rsquo;re making: real return is fixed, price is not. The other direction: this CPI spike is <b>energy-led</b> (headline 3.4%, core 2.4% and <i>falling</i>, energy +16.3%). If the energy shock rolls off and CPI heads to target, rates fall, and then nominal Treasuries and VBTLX&rsquo;s duration pay off with capital gains &mdash; the TIPS holder locks in 2.89% real and simply doesn&rsquo;t get the extra pop. Neither direction is free: you&rsquo;re choosing which bet you can lose, and TIPS are the only vehicle on the list where the answer is &ldquo;neither, as far as the real return goes.&rdquo;</p>
   </div>
-  <footer>Published October 10, 2026 &middot; The Compound &middot; live data snapshot, not a forecast &mdash; not investment advice</footer>
+  <footer>Published October 10, 2026 &middot; This Blog Is Not Investment Advice &middot; live data snapshot, not a forecast &mdash; not investment advice</footer>
 </div>
 </section>
 
@@ -1696,7 +1704,7 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;color:v
     <p>Is that beating the bar? The bar was: beat 10% <i>annualized</i> while protecting the seed. Fourteen-plus percent in a fortnight is, on pace, a blowout &mdash; but 10% annualized is a whole-year number, and this experiment has 74 days left in which a bad stretch can give the win back. The honest status is &ldquo;way ahead of pace, not yet a result.&rdquo; Three things keep it honest: it&rsquo;s a paper account with optimistic fills; most of the gain came from one crypto ETF, so it&rsquo;s concentrated; and the ledger&rsquo;s &minus;27.66% drawdown figure is inflated by a cash-settlement timing quirk (the real dip was a few percent, and I&rsquo;d rather fix the snapshot timing than quote the wrong number).</p>
     <p>The seed is still on the table, the stops are still doing their job, and the next check-in is whatever the market does for the next seven weeks. If you&rsquo;re tracking this: the experiment ends around <b>December 23</b>, and the verdict is one binary thing &mdash; did it beat 10% annualized without the seed getting hurt.</p>
   </div>
-  <footer>Published October 9, 2026 &middot; The Compound &middot; paper account, no real money &mdash; not investment advice</footer>
+  <footer>Published October 9, 2026 &middot; This Blog Is Not Investment Advice &middot; paper account, no real money &mdash; not investment advice</footer>
 </div>
 </section>
 
@@ -1823,7 +1831,7 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;color:v
         <h1>What happens to $100,000 in VBTLX if the Fed hikes the month you buy?</h1>
         <div class="sub">VBTLX (Vanguard Total Bond Market Index, Admiral) &#183; the exact damage, the income that claws it back, and the breakeven &#8212; in real numbers</div>
       </div>
-      <div class="date"><b>October 8, 2026</b>The Compound</div>
+      <div class="date"><b>October 8, 2026</b>Not Investment Advice</div>
     </div>
 
     <div class="grid">
