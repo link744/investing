@@ -28,10 +28,11 @@ a:hover{text-decoration:underline}
 .top a:hover{color:var(--cyan)}
 .masthead{padding:40px 0 8px}
 .masthead .logo{display:block;margin-bottom:14px}
-@media(max-width:720px){.masthead{padding:28px 0 6px}.masthead h1{font-size:34px}.masthead .logo{width:44px;height:44px}}
+@media(max-width:720px){.masthead{padding:28px 0 6px}.masthead h1{font-size:34px}.masthead h1 .not-part{font-size:14px}.masthead .logo{width:44px;height:44px}}
 .kick{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
 h1{color:var(--ink);font-size:34px;letter-spacing:-.01em;margin:6px 0 8px;line-height:1.1}
 .masthead h1{font-size:48px;font-weight:800;letter-spacing:-.02em;margin:4px 0 10px;line-height:1.05}
+.masthead h1 .not-part{font-size:19px;font-weight:600;letter-spacing:.02em;opacity:.85}
 .tag{color:var(--sub);margin:0 0 30px;max-width:560px;font-size:15.5px}
 .tag .lead{color:var(--ink);font-weight:600}
 .post-block{margin:0 0 48px;border-bottom:1px solid var(--line);padding-bottom:40px}
@@ -916,7 +917,7 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;color:v
       <rect x="29" y="14" width="6" height="23" rx="1" fill="#38bdf8"/>
       <line x1="11" y1="38" x2="37" y2="11" stroke="#e8eef7" stroke-width="3" stroke-linecap="round"/>
     </svg>
-    <h1>This Blog Is Not<br>Investment Advice</h1>
+    <h1><span class="not-part">This Blog Is Not</span><br>Investment Advice</h1>
     <p class="tag"><span class="lead">Investing, explained with data.</span> Each post is one infographic — the numbers up front — plus a plain-English TL;DR. Index funds, dollar-cost averaging, and the boring math that compounds. Slowly, boringly, and on purpose.</p>
   </div>
 
