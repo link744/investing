@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auction Windows Update: Dates Hold, 5-yr TIPS Sized at $26B, and the 2-yr Note Is the Under-3-Year One</title>
+<meta name="description" content="The Oct 19 follow-up: none of the three auction windows moved. The 5-yr TIPS is now fully announced ($26B, closes 12:00 noon ET Oct 22), the 2-yr note is live in the TreasuryDirect feed ahead of its Oct 26 auction, and only the 2-yr note (≈1.93y duration) passes the under-3-years test.">
+<meta name="author" content="Doug">
+<meta property="og:title" content="Auction Windows Update: Dates Hold, 5-yr TIPS Sized at $26B, and the 2-yr Note Is the Under-3-Year One">
+<meta property="og:description" content="Follow-up to the auction-windows post: all three dates unchanged since Oct 10. 5-yr TIPS fully announced ($26B, closes 12:00 noon ET Oct 22); 2-yr note now live in the feed; duration check: only the 2-yr note (≈1.93y) is under 3 years.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://thisblogisnotinvestmentadvice.com/posts/next-auction-windows-update.html">
+<style>
+:root {
+  --bg: #fafaf7;
+  --fg: #2a2a24;
+  --accent: #4f8cff;
+  --accent-soft: #eaf1ff;
+  --warn: #e8543f;
+  --warn-soft: #fdeeeb;
+  --ok: #2f9e6a;
+  --ok-soft: #eaf7f0;
+  --muted: #6b6b60;
+  --border: #e3e3dc;
+  --card: #ffffff;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7; font-size: 17px;
+}
+.wrap { max-width: 820px; margin: 0 auto; padding: 0 22px 80px; }
+.top { margin-bottom: 6px; font-size: 14px; }
+.top a { color: var(--muted); }
+.top a:hover { color: var(--accent); }
+header.post { padding: 26px 0 30px; border-bottom: 1px solid var(--border); margin-bottom: 34px; }
+h1 { font-size: 34px; line-height: 1.25; margin: 0 0 12px; letter-spacing: -0.02em; }
+.sub { color: var(--muted); font-size: 15px; margin: 0; }
+.sub b { color: var(--fg); }
+h2 { font-size: 24px; margin: 44px 0 14px; letter-spacing: -0.01em; }
+h3 { font-size: 18px; margin: 28px 0 8px; }
+p { margin: 0 0 16px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { color: #111; }
+ul, ol { padding-left: 22px; margin: 0 0 16px; }
+li { margin-bottom: 8px; }
+.series { font-size: 14.5px; color: var(--muted); margin: 0 0 18px; }
+.series a { color: var(--accent); }
+.kpis { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin: 20px 0 6px; }
+.kpis .kpi { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+.kpis .k { font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+.kpis b { display: block; font-size: 21px; color: var(--fg); letter-spacing: -0.02em; margin-top: 6px; }
+.kpis b.good { color: var(--ok); }
+.kpis b.bad { color: var(--warn); }
+.kpis span { font-size: 12px; color: var(--muted); }
+.fig { margin: 28px 0; }
+.fig .frame {
+  background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+  padding: 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.fig .cap { color: var(--muted); font-size: 13.5px; margin: 12px 2px 0; line-height: 1.55; }
+.callout {
+  border-radius: 12px; padding: 16px 18px; margin: 20px 0;
+  border: 1px solid var(--border);
+}
+.callout.warn { background: var(--warn-soft); border-color: #f4c9c0; }
+.callout.ok { background: var(--ok-soft); border-color: #bfe6d2; }
+.callout.info { background: var(--accent-soft); border-color: #cddcfa; }
+.callout .lbl { font-weight: 700; font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; display: block; margin-bottom: 6px; }
+.callout.warn .lbl { color: var(--warn); }
+.callout.ok .lbl { color: var(--ok); }
+.callout.info .lbl { color: #3565d8; }
+.callout p { margin: 0; }
+.callout ol { margin-bottom: 0; }
+.callout li { font-size: 15px; margin-bottom: 10px; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 14.5px; }
+th, td { padding: 8px 10px; border-bottom: 1px solid var(--border); text-align: right; }
+th:first-child, td:first-child { text-align: left; }
+th { color: var(--muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.03em; }
+tbody tr:last-child td { border-bottom: none; }
+.bad { color: var(--warn); font-weight: 700; }
+.good { color: var(--ok); font-weight: 700; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; background: #f0f0ea; padding: 1px 5px; border-radius: 5px; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 20px 0; }
+.cols .col { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; }
+.cols .col h3 { margin: 0 0 10px; }
+.cols .col ol { margin-bottom: 0; }
+.cols .col li { font-size: 15px; margin-bottom: 10px; }
+@media (max-width: 600px) {
+  h1 { font-size: 27px; }
+  body { font-size: 16px; }
+  .fig .frame { padding: 12px; }
+  .cols { grid-template-columns: 1fr; }
+  .kpis { grid-template-columns: repeat(2, 1fr); }
+}
+.foot { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+.sources li { font-size: 14px; margin-bottom: 6px; }
+</style>
+<link rel="canonical" href="https://thisblogisnotinvestmentadvice.com/posts/next-auction-windows-update.html">
+</head>
+<body>
+<div class="wrap">
+<div class="top"><a href="https://thisblogisnotinvestmentadvice.com/">&#8592; Back to Investing blog</a></div>
+<header class="post">
+  <h1>Auction Windows Update: Dates Hold, 5-yr TIPS Sized at $26B, and the 2-yr Note Is the Under-3-Year One</h1>
+  <p class="sub"><b>Short version (as of Monday, Oct 19, 2026):</b> since the original post, <b>none of the three windows moved</b> — 5-yr TIPS still bids <b>Thu, Oct 22</b>, the 2-yr note still <b>Mon, Oct 26</b>, 10-yr TIPS still <b>Thu, Nov 19</b>. What changed is completeness: the 5-yr TIPS is now <b>fully announced</b> (<b>$26B</b> offering, close <b>12:00 noon ET</b>), and the 2-yr note is now <b>live in the TreasuryDirect feed</b> ahead of its official announcement on Oct 22. And on the duration question — <b>only the 2-yr note (≈1.93y) is under 3 years</b>.</p>
+</header>
+
+<p class="series">Part 2 of this series. <a href="https://thisblogisnotinvestmentadvice.com/posts/next-treasury-auction-windows.html">Part 1 — "When Do the Next Auction Windows Open? 2-Year Note &amp; TIPS, Dated" (Oct 10)</a> — built the calendar and the how-to. This is the update to it.</p>
+
+<div class="kpis">
+  <div class="kpi"><span class="k">Windows that moved</span><b class="good">0 of 3</b><span>all dates unchanged since Oct 10</span></div>
+  <div class="kpi"><span class="k">Next bid</span><b>Oct 22</b><span>5-yr TIPS · 3 days out</span></div>
+  <div class="kpi"><span class="k">5-yr TIPS offering</span><b>$26B</b><span>announced Oct 15 · min bid $100</span></div>
+  <div class="kpi"><span class="k">2-yr note duration</span><b class="good">≈1.93y ✓</b><span>the only one under 3 years</span></div>
+  <div class="kpi"><span class="k">TIPS durations</span><b class="bad">4.73 / 8.80y</b><span>5-yr / 10-yr — both over 3</span></div>
+</div>
+
+<div class="fig">
+  <div class="frame"><svg viewBox="0 0 960 400" role="img" aria-label="Macaulay duration at par for the three upcoming auctions versus the 3-year threshold: 2-year note about 1.93 years passes, 5-year TIPS about 4.73 years and 10-year TIPS about 8.80 years both fail">
+<rect width="960" height="400" fill="#fafaf7"/>
+<text x="80" y="34" font-size="17" fill="#2a2a24" font-weight="700">The "&lt; 3 years" test: Macaulay duration at par</text>
+<text x="80" y="54" font-size="12" fill="#8a8a84">Yields as of ~Oct 17, 2026: 2-yr ≈4.75% nominal · 5-yr TIPS ≈2.56% real · 10-yr TIPS ≈2.78% real (semi-annual coupons)</text>
+<line x1="220" y1="70" x2="220" y2="340" stroke="#b8b8b2" stroke-width="1"/>
+<line x1="340" y1="70" x2="340" y2="340" stroke="#e3e3dc" stroke-width="1"/>
+<line x1="460" y1="70" x2="460" y2="340" stroke="#e3e3dc" stroke-width="1"/>
+<line x1="580" y1="70" x2="580" y2="340" stroke="#e3e3dc" stroke-width="1"/>
+<line x1="700" y1="70" x2="700" y2="340" stroke="#e3e3dc" stroke-width="1"/>
+<line x1="820" y1="70" x2="820" y2="340" stroke="#e3e3dc" stroke-width="1"/>
+<text x="220" y="358" font-size="11" fill="#5a5a54" text-anchor="middle">0y</text>
+<text x="340" y="358" font-size="11" fill="#5a5a54" text-anchor="middle">2y</text>
+<text x="460" y="358" font-size="11" fill="#5a5a54" text-anchor="middle">4y</text>
+<text x="580" y="358" font-size="11" fill="#5a5a54" text-anchor="middle">6y</text>
+<text x="700" y="358" font-size="11" fill="#5a5a54" text-anchor="middle">8y</text>
+<text x="820" y="358" font-size="11" fill="#5a5a54" text-anchor="middle">10y</text>
+<text x="205" y="100" font-size="13" fill="#2a2a24" font-weight="700" text-anchor="end">2-Year Note</text>
+<rect x="220" y="80" width="115.8" height="36" rx="6" fill="#2f9e6a"/>
+<text x="346" y="104" font-size="13" fill="#2f9e6a" font-weight="700">≈1.93y — passes</text>
+<text x="205" y="190" font-size="13" fill="#2a2a24" font-weight="700" text-anchor="end">5-Year TIPS</text>
+<rect x="220" y="170" width="283.8" height="36" rx="6" fill="#e8543f"/>
+<text x="514" y="194" font-size="13" fill="#e8543f" font-weight="700">≈4.73y — fails</text>
+<text x="205" y="280" font-size="13" fill="#2a2a24" font-weight="700" text-anchor="end">10-Year TIPS</text>
+<rect x="220" y="260" width="528" height="36" rx="6" fill="#e8543f"/>
+<text x="758" y="284" font-size="13" fill="#e8543f" font-weight="700">≈8.80y — fails</text>
+<line x1="400" y1="70" x2="400" y2="340" stroke="#e8543f" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="400" y="380" font-size="11.5" fill="#e8543f" font-weight="700" text-anchor="middle">3.0-year threshold</text>
+</svg></div>
+  <p class="cap">Macaulay duration, computed at par (coupon set to the current yield), semi-annual coupons — the right measure for "how long my money is effectively committed." <strong>Only the 2-year note clears the 3-year line.</strong> Both TIPS windows carry real yields of ~2.6–2.8%, so their durations sit just under their nominal tenors — 4.73y and 8.80y. TIPS duration is measured in the real (inflation-adjusted) yield, which is the right basis for a TIPS.</p>
+</div>
+
+<h2>The calendar, as of Oct 19</h2>
+<table>
+  <thead><tr><th>Security</th><th>Auction day</th><th>Settles (issue)</th><th>Status (Oct 19)</th></tr></thead>
+  <tbody>
+    <tr><td>5-Year TIPS</td><td>Thu, Oct 22, 2026</td><td>Fri, Oct 30, 2026</td><td class="good">announced Oct 15 · live in feed — $26B, closes 12:00 noon ET</td></tr>
+    <tr><td>2-Year note (nominal)</td><td>Mon, Oct 26, 2026</td><td>Mon, Nov 02, 2026</td><td class="good">live in feed — official announcement due Oct 22</td></tr>
+    <tr><td>10-Year TIPS</td><td>Thu, Nov 19, 2026</td><td>Mon, Nov 30, 2026</td><td>tentative schedule — announcement due Nov 12</td></tr>
+  </tbody>
+</table>
+<p class="cap" style="color:var(--muted);font-size:13.5px;">CUSIPs: 5-yr TIPS 91282CRR4, 2-yr note 91282CRU7. All dates 2026, verified Oct 19 against the TreasuryDirect upcoming-auctions JSON feed, the Oct 15 offering announcement, the Oct 16 CUSIP release, and the Treasury's tentative 6-month auction schedule.</p>
+
+<p>Two things to keep in mind from Part 1, still true here: the <strong>auction day is the only day you can bid</strong>, and <strong>money moves on the issue date</strong> — Oct 22 bid pays on Oct 30, the Oct 26 bid on Nov 2.</p>
+
+<h2>What changed since the Oct 10 post</h2>
+<table>
+  <thead><tr><th>Item</th><th>Oct 10 (post)</th><th>Oct 19 (now)</th><th>Delta</th></tr></thead>
+  <tbody>
+    <tr><td>Auctions completed since the post</td><td>— (first window was Oct 22)</td><td class="bad">None yet</td><td>earliest auction is 3 days out — nothing to report</td></tr>
+    <tr><td>5-yr TIPS dates</td><td>Oct 22 / settles Oct 30</td><td>Oct 22 / settles Oct 30</td><td class="good">unchanged</td></tr>
+    <tr><td>5-yr TIPS detail</td><td>dates only, no size posted</td><td><strong>$26B</strong>, min bid $100, close 12:00 noon ET / 1:00 p.m. ET, AE-2031, maturity <strong>Oct 15, 2031</strong></td><td class="good">new — fully announced Oct 15</td></tr>
+    <tr><td>2-yr note dates</td><td>Oct 26 / settles Nov 2 (tentative)</td><td>Oct 26 / settles Nov 2</td><td class="good">unchanged</td></tr>
+    <tr><td>2-yr note status</td><td>tentative schedule only</td><td>live in the TreasuryDirect feed (Oct 16 CUSIP release)</td><td class="good">upgraded — official announcement due Oct 22</td></tr>
+    <tr><td>10-yr TIPS dates</td><td>Nov 19 / settles Nov 30 (tentative)</td><td>Nov 19 / settles Nov 30 (tentative)</td><td>unchanged (announcement due Nov 12)</td></tr>
+    <tr><td>Windows that moved</td><td>—</td><td class="bad">None</td><td>all three dates identical to the post</td></tr>
+  </tbody>
+</table>
+<p>The net: the calendar is exactly as the post stated. The change since Oct 10 is <strong>completeness, not movement</strong> — the 5-yr TIPS is now fully dated and sized, and the 2-yr note is confirmed in the live feed ahead of its Oct 22 official announcement.</p>
+
+<div class="callout info">
+  <span class="lbl">What this means for you</span>
+  <p>If your goal is a Treasury with <strong>duration under 3 years</strong>, the whole set narrows to <strong>one instrument: the 2-year note</strong>. Its window is <strong>Monday, Oct 26</strong> — bid on TreasuryDirect from $100 or at a Vanguard brokerage account from $1,000, non-competitive, funded on the issue date <strong>Nov 2</strong>. The 5-yr and 10-yr TIPS windows are real opportunities for TIPS exposure, but they are 4.73y and 8.80y instruments — above the 3-year line, so they belong to a different goal (inflation protection), not a short-duration one.</p>
+</div>
+
+<h2>So, in plain English</h2>
+<ul>
+  <li><strong>Did the windows move?</strong> No. All three dates are identical to the Oct 10 post: <strong>Oct 22, Oct 26, Nov 19</strong>.</li>
+  <li><strong>Did anything happen yet?</strong> No auctions have completed — the first one (5-yr TIPS) is <strong>3 days out</strong>, on Thu, Oct 22.</li>
+  <li><strong>What's new:</strong> the 5-yr TIPS is now <strong>fully announced</strong> — <strong>$26B</strong> offering, minimum bid <strong>$100</strong>, non-competitive bids close <strong>12:00 noon ET</strong> (11:00 AM CT), competitive 1:00 p.m. ET, and it matures <strong>Oct 15, 2031</strong>. The 2-yr note is now <strong>live in the TreasuryDirect feed</strong>; its official offering announcement is due <strong>Oct 22</strong> (same day as the 5-yr TIPS auction — that's where its close times will be confirmed).</li>
+  <li><strong>The under-3-years answer:</strong> <strong>only the 2-year note</strong> — <strong>≈1.93y</strong> duration. The 5-yr TIPS (≈4.73y) and 10-yr TIPS (≈8.80y) both fail. If you want calendar exposure under 3 years, the 2-yr note is the fit; neither TIPS window is.</li>
+</ul>
+
+<div class="callout ok">
+  <span class="lbl">Bottom line</span>
+  <p>The update is a clean one: <strong>dates hold, completeness improved</strong>. Next action date for the short-duration goal is <strong>Monday, Oct 26</strong> — the 2-yr note auction, funded <strong>Nov 2</strong>. The 5-yr TIPS on Oct 22 is the bigger, fully-specified auction ($26B, closes 12:00 noon ET), but at ≈4.73y it's the inflation-protection play, not the under-3-year one.</p>
+</div>
+
+<div class="callout info">
+  <span class="lbl">The numbers, and their assumptions</span>
+  <ol>
+    <li><strong>Data window / source.</strong> Everything above is as of <strong>Monday, Oct 19, 2026</strong> (Central time). Dates verified against the live TreasuryDirect upcoming-auctions JSON feed (pulled Oct 19), the 5-yr TIPS offering announcement of <strong>Oct 15, 2026</strong> (<span class="mono">A_20261015_1.pdf</span>), the <strong>Oct 16, 2026</strong> CUSIP release, and the Treasury's <em>Tentative 6-Month Auction Schedule</em>.</li>
+    <li><strong>Duration method.</strong> Macaulay duration computed <strong>at par</strong> (coupon set equal to the current yield), semi-annual coupons. Yields are <strong>approximate, web-sourced ~Oct 17, 2026</strong> (2-yr ≈4.75% nominal; 5-yr TIPS ≈2.56% real; 10-yr TIPS ≈2.78% real) — the Treasury's live daily yield-curve endpoints returned 404 at pull time. The under-3-years flag is insensitive to this: even a rough ≈2.2y estimate for the 2-yr note stays under 3y, and both TIPS stay far above.</li>
+    <li><strong>Out of scope.</strong> Close times for the 2-yr note and 10-yr TIPS (their offering announcements are due <strong>Oct 22</strong> and <strong>Nov 12</strong> — dates are confirmed, times are not yet published; expect the 5-yr TIPS pattern of 12:00 noon ET / 1:00 p.m. ET for the 2-yr note). No yield or price forecast. The other late-October auctions on the same CUSIP release (2-yr FRN Oct 28, 5-yr note Oct 27, 7-yr note Oct 29) are not covered by this series.</li>
+    <li><strong>Evidence-based, not a guarantee.</strong> Dates can shift if Treasury moves the schedule — the 2-yr note's official announcement (Oct 22) and the 10-yr TIPS's (Nov 12) are the confirmation dates. This is a report on the auction calendar, not a forecast: the auction yield is whatever the auction sets.</li>
+  </ol>
+</div>
+
+<div class="callout warn">
+  <span class="lbl">Honest caveats</span>
+  <p>Durations use approximate yields (see assumption 2); the flag is robust to that error, but the exact duration numbers will tick as yields move. The 2-yr note's offering size and close times are <strong>not yet published</strong> — they land in its official offering announcement due Oct 22. TIPS duration here is measured in the real (inflation-adjusted) yield, which is the correct basis for a TIPS; a TIPS also varies with the CPI index, which is what its real duration is meant to capture — so for a true calendar-under-3-years horizon, the 2-yr note is the fit, and the TIPS windows belong to the inflation-protection goal instead. This is a how-to/calendar report, not a recommendation to buy any specific security.</p>
+</div>
+
+<h2>How I got these numbers</h2>
+<p>The live TreasuryDirect upcoming-auctions JSON feed (<span class="mono">treasurydirect.gov/TA_WS/securities/upcoming</span>, TIPS and Note types), pulled <strong>2026-10-19</strong>: 5-yr TIPS (91282CRR4, auction 2026-10-22, issue 2026-10-30, updated 2026-10-15) and 2-yr note (91282CRU7, auction 2026-10-26, issue 2026-11-02, updated 2026-10-16). The 5-yr TIPS details ($26B, min bid $100, 12:00 noon ET / 1:00 p.m. ET close, AE-2031, maturity Oct 15 2031) come straight from its Oct 15 offering announcement PDF. The 10-yr TIPS window (Nov 19 / Nov 30, announcement due Nov 12) is not yet in the live feed, so it comes from the Treasury's tentative 6-month auction schedule. Durations: Macaulay at par, semi-annual, computed in code (<span class="mono">durations.py</span>) against web-sourced yields from ~Oct 17, 2026; the baseline was the Oct 10 post's research (batch <span class="mono">investing-20261009</span>), validated rather than re-pulled.</p>
+
+<div class="foot">
+  <p style="margin-bottom:8px;"><strong>Sources</strong></p>
+  <ol class="sources">
+    <li>TreasuryDirect live upcoming auctions (JSON feed), pulled 2026-10-19. <a href="https://www.treasurydirect.gov/TA_WS/securities/upcoming?format=json&amp;limitByTerm=true&amp;type=TIPS">treasurydirect.gov/TA_WS/securities/upcoming</a></li>
+    <li>U.S. Treasury, <em>5-Year TIPS Offering Announcement, Oct 15, 2026</em> ($26B, CUSIP 91282CRR4, close 12:00 noon ET / 1:00 p.m. ET). <a href="https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/A_20261015_1.pdf">treasurydirect.gov (PDF)</a></li>
+    <li>U.S. Treasury, <em>CUSIP Release Announcement (Pending Auctions), Oct 16, 2026</em>. <a href="https://www.treasurydirect.gov/instit/annceresult/press/preanre/PendingAuctions.pdf">treasurydirect.gov (PDF)</a></li>
+    <li>U.S. Treasury, <em>Tentative 6-Month Auction Schedule</em> (10-yr TIPS: announce Nov 12, auction Nov 19, settle Nov 30). <a href="https://home.treasury.gov/system/files/221/Tentative-Auction-Schedule.pdf">home.treasury.gov (PDF)</a></li>
+    <li>Yields for duration math: web-sourced ~2026-10-17 (Treasury live curve endpoints 404'd at pull time). See assumption 2.</li>
+  </ol>
+  <p style="margin-top:14px;">Written with Hermes Agent · Local model · Not investment advice — your time horizon, taxes, and comfort are your own.</p>
+</div>
+</div>
+</body>
+</html>
