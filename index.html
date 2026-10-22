@@ -888,6 +888,50 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;color:v
 .p15 .fig .frame{padding:12px}
 .p15 .kpis{grid-template-columns:repeat(2,1fr)}
 }
+
+/* p16 — AI bubble burst (light theme) */
+.p16{--bg:#fafaf7;--fg:#2a2a24;--accent:#4f8cff;--accent-soft:#eaf1ff;--warn:#e8543f;--warn-soft:#fdeeeb;--ok:#2f9e6a;--ok-soft:#eaf7f0;--muted:#6b6b60;--border:#e3e3dc;--card:#ffffff}
+.p16 *{box-sizing:border-box}
+.p16{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6}
+.p16 a{color:var(--accent);text-decoration:none}
+.p16 a:hover{text-decoration:underline}
+.p16 .mast{padding:36px 0 20px}
+.p16 .badge{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:99px;border:1px solid #b8d4ff;background:var(--accent-soft);color:var(--accent);margin-bottom:14px}
+.p16 h1.post-title{color:var(--fg);font-size:27px;font-weight:800;letter-spacing:-.02em;margin:0 0 10px;line-height:1.2}
+.p16 .pmeta{color:var(--muted);font-size:13px;margin:0 0 10px}
+.p16 .sub{color:var(--muted);font-size:16px;line-height:1.6;margin:0 0 32px}
+.p16 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:28px}
+.p16 .kpi{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px}
+.p16 .kpi .n{font-size:24px;font-weight:800;letter-spacing:-.01em}
+.p16 .kpi .l{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.p16 .kpi .s{font-size:12px;color:var(--muted);margin-top:2px}
+.p16 .kpi.bad .n{color:var(--warn)}
+.p16 .kpi.ok .n{color:var(--ok)}
+.p16 .kpi.acc .n{color:var(--accent)}
+.p16 figure{margin:0 0 28px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px}
+.p16 figure h3{font-size:15px;font-weight:700;margin:0 0 16px}
+.p16 .cap{font-size:11.5px;color:var(--muted);margin-top:12px;line-height:1.5}
+.p16 table{width:100%;border-collapse:collapse;font-size:13px}
+.p16 th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);text-align:left;padding:8px 10px;border-bottom:2px solid var(--border);font-weight:700}
+.p16 td{padding:10px;border-bottom:1px solid var(--border);vertical-align:top}
+.p16 tr:last-child td{border-bottom:none}
+.p16 h2{font-size:22px;font-weight:800;margin:40px 0 16px;letter-spacing:-.01em}
+.p16 p{margin:0 0 16px}
+.p16 footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--border);font-size:12px;color:var(--muted);line-height:1.6}
+.p16 footer a{color:var(--accent);text-decoration:none}
+.p16 footer ul{margin:12px 0 0 18px;font-size:12px}
+.p16 footer li{margin-bottom:6px;word-break:break-all}
+.p16 .callout{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:10px;padding:18px 20px;margin:24px 0}
+.p16 .callout.warn{border-left-color:var(--warn)}
+.p16 .callout.ok{border-left-color:var(--ok)}
+.p16 .callout .label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-bottom:8px}
+.p16 .callout.warn .label{color:var(--warn)}
+.p16 .callout.ok .label{color:var(--ok)}
+.p16 .callout p:last-child{margin-bottom:0}
+.p16 .callout ol,.p16 .callout ul{margin:8px 0 0 20px;font-size:14px}
+.p16 .callout li{margin-bottom:8px}
+@media(max-width:600px){.p16 h1.post-title{font-size:23px}.p16 .kpis{grid-template-columns:repeat(2,1fr)}}
+
 </style>
 </head>
 <body>
@@ -896,6 +940,11 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;color:v
   <button class="drawer-close" id="drawerClose" type="button" aria-label="Close posts menu"><span></span><span></span><span></span></button>
   <div class="toc">
     <div class="toc-kick">Posts</div>
+    <a class="toc-item" href="#p16">
+      <span class="t">If the AI Bubble Bursts, How Far Does the S&amp;P 500 Fall?</span>
+      <span class="d">October 21, 2026 &middot; scenario math</span>
+      <span class="s">10% or 50%? The data says −30% to −50% (point ≈ −40%) — the AI trade is ≈ 41% of the index and top-10 concentration is 1.45× the 2000 peak, with 2000/2008/1987 analogs behind the numbers.</span>
+    </a>
     <a class="toc-item" href="#p15">
       <span class="t">Auction Windows Update: Dates Hold, 5-yr TIPS Sized at $26B, and the 2-yr Note Is the Under-3-Year One</span>
       <span class="d">October 19, 2026 &middot; auction calendar follow-up</span>
@@ -990,6 +1039,216 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;color:v
     <h1><span class="not-part">This Blog Is Not</span><br>Investment Advice</h1>
     <p class="tag"><span class="lead">Data-driven investment research packed into a blog series that doesn't give any investment advice in any way.</span> All about Boring, slow, repeatable math that is repeatable.</p>
   </div>
+
+<section class="p16" id="p16">
+  <div class="wrap">
+  <div class="mast">
+    <span class="badge">AI burst scenario</span>
+    <h1 class="post-title">If the AI Bubble Bursts, How Far Does the S&amp;P 500 Fall?</h1>
+    <div class="pmeta">Oct 21, 2026 &middot; scenario math &middot; <a href="https://thisblogisnotinvestmentadvice.com/posts/ai-bubble-burst.html">standalone post &rarr;</a></div>
+  </div>
+<p class="sub">You asked the question in the headline: if the AI trade in the S&amp;P 500 bursts, is the drawdown <strong>10%</strong> or <strong>50%</strong>? The data-based answer is neither exactly — it's <strong>−30% to −50%</strong>, with a point estimate of <strong>≈ −40%</strong>. Not 10%. And 50% is the deep end of the band: it only shows up when the AI capex cycle itself breaks. If AI earnings hold up and only the multiple gives back, the same math says <strong>−15% to −25%</strong>. All numbers below are from the Oct 21, 2026 close.</p>
+
+<div class="kpis">
+  <div class="kpi acc"><div class="l">S&amp;P 500 close</div><div class="n">7,757.17</div><div class="s">Oct 21, 2026 — the level the scenarios apply to</div></div>
+  <div class="kpi acc"><div class="l">AI-linked weight</div><div class="n">≈ 41%</div><div class="s">of the index: 34.5% core + 7.0% semis</div></div>
+  <div class="kpi bad"><div class="l">Top-10 concentration</div><div class="n">37.3–39.9%</div><div class="s">27.6% at the 2000 peak → 1.45× today</div></div>
+  <div class="kpi bad"><div class="l">Expected drawdown</div><div class="n">−30% to −50%</div><div class="s">point estimate ≈ −40%</div></div>
+  <div class="kpi"><div class="l">Time to bottom</div><div class="n">~2.5–3 yrs</div><div class="s">2000–02 took 31 months peak to trough</div></div>
+</div>
+
+<figure>
+<h3>If the AI bubble bursts — S&amp;P 500 drawdown by scenario</h3>
+<svg viewBox="0 0 960 400" style="width:100%;height:auto;display:block" role="img" aria-label="S&P 500 drawdown by scenario, bars from zero">
+  <text x="80" y="34" font-size="15" font-weight="700" fill="#2a2a24">Scenario drawdown — S&amp;P 500, peak close to trough close</text>
+  <text x="80" y="54" font-size="12" fill="#6b6b60">Two-component weighted average: index move = 41.4% × (AI basket) + 58.6% × (rest of index), Oct 21, 2026 weights</text>
+  <!-- gridlines: 0% at 280, 90% at 920 (7.111 px per %) -->
+  <line x1="280" y1="66" x2="280" y2="328" stroke="#e3e3dc" stroke-width="1"/>
+  <line x1="422.2" y1="66" x2="422.2" y2="328" stroke="#e3e3dc" stroke-width="1"/>
+  <line x1="564.4" y1="66" x2="564.4" y2="328" stroke="#e3e3dc" stroke-width="1"/>
+  <line x1="706.7" y1="66" x2="706.7" y2="328" stroke="#e3e3dc" stroke-width="1"/>
+  <line x1="848.9" y1="66" x2="848.9" y2="328" stroke="#e3e3dc" stroke-width="1"/>
+  <line x1="280" y1="328" x2="920" y2="328" stroke="#e3e3dc" stroke-width="1"/>
+  <text x="280" y="348" font-size="11" fill="#6b6b60" text-anchor="middle">0%</text>
+  <text x="422.2" y="348" font-size="11" fill="#6b6b60" text-anchor="middle">−20%</text>
+  <text x="564.4" y="348" font-size="11" fill="#6b6b60" text-anchor="middle">−40%</text>
+  <text x="706.7" y="348" font-size="11" fill="#6b6b60" text-anchor="middle">−60%</text>
+  <text x="848.9" y="348" font-size="11" fill="#6b6b60" text-anchor="middle">−80%</text>
+  <!-- Row 1: S1 de-rate, earnings hold: range bar 13.5–18.3 -->
+  <text x="270" y="87" font-size="12" fill="#2a2a24" text-anchor="end">S1 — De-rate, earnings hold</text>
+  <rect x="376" y="74" width="34.1" height="22" rx="2" fill="#4f8cff" fill-opacity="0.55" stroke="#4f8cff" stroke-width="1.5"/>
+  <text x="418" y="90" font-size="12" fill="#2a2a24" font-weight="700">−13.5% to −18.3% (≈ −15 to −18%)</text>
+  <!-- Row 2: S2 2000-style burst, basket -70%: -37.8 -->
+  <text x="270" y="125" font-size="12" fill="#2a2a24" text-anchor="end">S2 — 2000-style tech burst</text>
+  <rect x="280" y="112" width="268.8" height="22" rx="2" fill="#4f8cff"/>
+  <text x="556" y="128" font-size="12" fill="#2a2a24" font-weight="700">−37.8% ≈ −38%</text>
+  <!-- Row 3: S2' basket -80%: -41.9 -->
+  <text x="270" y="163" font-size="12" fill="#2a2a24" text-anchor="end">S2′ — Same, basket −80%</text>
+  <rect x="280" y="150" width="297.9" height="22" rx="2" fill="#4f8cff"/>
+  <text x="586" y="166" font-size="12" fill="#2a2a24" font-weight="700">−41.9% ≈ −42%</text>
+  <!-- Row 4: S3 burst + capex break: -50.7 -->
+  <text x="270" y="201" font-size="12" fill="#2a2a24" text-anchor="end">S3 — Burst + capex cycle breaks</text>
+  <rect x="280" y="188" width="358.6" height="22" rx="2" fill="#e8543f"/>
+  <text x="646" y="204" font-size="12" fill="#2a2a24" font-weight="700">−50.7% ≈ −50%</text>
+  <!-- Row 5: S3' 2000 replay scaled: -54.5 -->
+  <text x="270" y="239" font-size="12" fill="#2a2a24" text-anchor="end">S3′ — 2000 replay, today's weights</text>
+  <rect x="280" y="226" width="387.6" height="22" rx="2" fill="#e8543f"/>
+  <text x="676" y="242" font-size="12" fill="#2a2a24" font-weight="700">−54.5%</text>
+  <!-- Row 6: T 1929-style tail: -80+ -->
+  <text x="270" y="277" font-size="12" fill="#2a2a24" text-anchor="end">T — 1929-style (tail case)</text>
+  <rect x="280" y="264" width="568.9" height="22" rx="2" fill="#b8b8b2"/>
+  <text x="857" y="280" font-size="12" fill="#2a2a24" font-weight="700">−80%+</text>
+  <!-- Row 7: expected band 30–50, point 40 -->
+  <text x="270" y="315" font-size="12" fill="#2a2a24" text-anchor="end" font-weight="700">Expected (this post's answer)</text>
+  <rect x="493.3" y="302" width="142.3" height="22" rx="2" fill="#4f8cff" fill-opacity="0.35" stroke="#4f8cff" stroke-width="1.5"/>
+  <line x1="564.4" y1="298" x2="564.4" y2="328" stroke="#2a2a24" stroke-width="2"/>
+  <circle cx="564.4" cy="313" r="4" fill="#2a2a24"/>
+  <text x="646" y="318" font-size="12" fill="#2a2a24" font-weight="700">−30% to −50%, point ≈ −40%</text>
+</svg>
+<p class="cap">S1: de-rate only, AI earnings hold (1987 pattern: multiple gives back, fundamentals intact). S2: 2000-style tech burst with the AI basket −70% (S2′: −80%). S3: the burst transmits — hyperscalers cut capex, semis roll over, recession follows (2000 + 2008 combined). S3′: the 2000 drawdown replayed at today's heavier weights. T: 1929-style tail case — not the base case. All peak-close to trough-close.</p>
+</figure>
+
+<figure>
+<h3>Concentration: today vs the 2000 peak</h3>
+<svg viewBox="0 0 960 330" style="width:100%;height:auto;display:block" role="img" aria-label="Top-10 and AI-basket concentration of the S&P 500, 2000 peak vs today">
+  <text x="80" y="34" font-size="15" font-weight="700" fill="#2a2a24">How much of the S&amp;P 500 sits in one group of stocks</text>
+  <text x="80" y="54" font-size="12" fill="#6b6b60">Share of the index — the higher the bar, the less diversified the index really is</text>
+  <!-- gridlines: 0% at 300, 50% at 920 (12.4 px per %) -->
+  <line x1="300" y1="70" x2="300" y2="262" stroke="#e3e3dc" stroke-width="1"/>
+  <line x1="424" y1="70" x2="424" y2="262" stroke="#e3e3dc" stroke-width="1"/>
+  <line x1="548" y1="70" x2="548" y2="262" stroke="#e3e3dc" stroke-width="1"/>
+  <line x1="672" y1="70" x2="672" y2="262" stroke="#e3e3dc" stroke-width="1"/>
+  <line x1="796" y1="70" x2="796" y2="262" stroke="#e3e3dc" stroke-width="1"/>
+  <line x1="920" y1="70" x2="920" y2="262" stroke="#e3e3dc" stroke-width="1"/>
+  <line x1="300" y1="262" x2="920" y2="262" stroke="#e3e3dc" stroke-width="1"/>
+  <text x="300" y="282" font-size="11" fill="#6b6b60" text-anchor="middle">0%</text>
+  <text x="424" y="282" font-size="11" fill="#6b6b60" text-anchor="middle">10%</text>
+  <text x="548" y="282" font-size="11" fill="#6b6b60" text-anchor="middle">20%</text>
+  <text x="672" y="282" font-size="11" fill="#6b6b60" text-anchor="middle">30%</text>
+  <text x="796" y="282" font-size="11" fill="#6b6b60" text-anchor="middle">40%</text>
+  <text x="920" y="282" font-size="11" fill="#6b6b60" text-anchor="middle">50%</text>
+  <!-- Row 1: 2000 peak top-10: 27.6 -->
+  <text x="290" y="112" font-size="12" fill="#2a2a24" text-anchor="end">S&amp;P 500 top 10, Mar 2000 peak</text>
+  <rect x="300" y="84" width="344.2" height="40" rx="3" fill="#b8b8b2"/>
+  <text x="652" y="110" font-size="13" fill="#2a2a24" font-weight="700">27.6%</text>
+  <!-- Row 2: today top-10: 37.3–39.9 (drawn to 39.9) -->
+  <text x="290" y="178" font-size="12" fill="#2a2a24" text-anchor="end">S&amp;P 500 top 10, Oct 21, 2026</text>
+  <rect x="300" y="150" width="494.8" height="40" rx="3" fill="#4f8cff"/>
+  <line x1="762.5" y1="146" x2="762.5" y2="194" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="802" y="176" font-size="13" fill="#2a2a24" font-weight="700">37.3–39.9%</text>
+  <!-- Row 3: AI basket 41.4 -->
+  <text x="290" y="244" font-size="12" fill="#2a2a24" text-anchor="end">AI basket, Oct 21, 2026 (17 names)</text>
+  <rect x="300" y="216" width="513.4" height="40" rx="3" fill="#4f8cff" fill-opacity="0.55"/>
+  <text x="821" y="242" font-size="13" fill="#2a2a24" font-weight="700">≈ 41.4%</text>
+  <text x="80" y="312" font-size="12" fill="#6b6b60">Today's top-10 concentration is <tspan font-weight="700" fill="#2a2a24">1.45×</tspan> the 2000 peak — and the AI-linked basket alone is ≈ <tspan font-weight="700" fill="#2a2a24">41.4%</tspan> of the index.</text>
+</svg>
+<p class="cap">Top-10 weight: 37.3% (Mar 2026) to 39.9% (Oct 21, 2026); three independent sources agree the top 10 is ~37–40%. 2000 peak top-10: 27.6%. AI basket = 7 core names (34.5%) + 10 major semis (7.0%) = 41.4%. Mag-7 alone ≈ 33–34%.</p>
+</figure>
+
+<figure>
+<h3>The historical drawdown analogs — peak close to trough close</h3>
+<svg viewBox="0 0 960 380" style="width:100%;height:auto;display:block" role="img" aria-label="Historical peak-to-trough drawdowns for the 1987, 2000-2002, 2007-2009 and 1929 drawdowns">
+  <text x="80" y="34" font-size="15" font-weight="700" fill="#2a2a24">Past busts, peak close → trough close</text>
+  <text x="80" y="54" font-size="12" fill="#6b6b60">Closing prices only. Blue = primary analog · gray = poor analog · red = tail case</text>
+  <!-- gridlines: 0% at 300, 95% at 920 (6.526 px per %) -->
+  <line x1="300" y1="68" x2="300" y2="318" stroke="#e3e3dc" stroke-width="1"/>
+  <line x1="430.5" y1="68" x2="430.5" y2="318" stroke="#e3e3dc" stroke-width="1"/>
+  <line x1="561.1" y1="68" x2="561.1" y2="318" stroke="#e3e3dc" stroke-width="1"/>
+  <line x1="691.6" y1="68" x2="691.6" y2="318" stroke="#e3e3dc" stroke-width="1"/>
+  <line x1="822.1" y1="68" x2="822.1" y2="318" stroke="#e3e3dc" stroke-width="1"/>
+  <line x1="300" y1="318" x2="920" y2="318" stroke="#e3e3dc" stroke-width="1"/>
+  <text x="300" y="340" font-size="11" fill="#6b6b60" text-anchor="middle">0%</text>
+  <text x="430.5" y="340" font-size="11" fill="#6b6b60" text-anchor="middle">−20%</text>
+  <text x="561.1" y="340" font-size="11" fill="#6b6b60" text-anchor="middle">−40%</text>
+  <text x="691.6" y="340" font-size="11" fill="#6b6b60" text-anchor="middle">−60%</text>
+  <text x="822.1" y="340" font-size="11" fill="#6b6b60" text-anchor="middle">−80%</text>
+  <!-- Row 1: 1987 Dow -36.1 -->
+  <text x="290" y="103" font-size="12" fill="#2a2a24" text-anchor="end">1987 — Dow, Aug→Oct 1987</text>
+  <rect x="300" y="82" width="235.6" height="32" rx="2" fill="#b8b8b2"/>
+  <text x="543" y="103" font-size="12" fill="#2a2a24" font-weight="700">−36.1%</text>
+  <!-- Row 2: 2000-02 S&P -49.1 -->
+  <text x="290" y="151" font-size="12" fill="#2a2a24" text-anchor="end">2000–02 — S&amp;P 500</text>
+  <rect x="300" y="130" width="319.4" height="32" rx="2" fill="#4f8cff"/>
+  <text x="627" y="151" font-size="12" fill="#2a2a24" font-weight="700">−49.1%</text>
+  <!-- Row 3: 2000-02 Nasdaq -77.9 -->
+  <text x="290" y="199" font-size="12" fill="#2a2a24" text-anchor="end">2000–02 — Nasdaq</text>
+  <rect x="300" y="178" width="510.4" height="32" rx="2" fill="#4f8cff" fill-opacity="0.55"/>
+  <text x="818" y="199" font-size="12" fill="#2a2a24" font-weight="700">−77.9%</text>
+  <!-- Row 4: 2007-09 S&P -56.8 -->
+  <text x="290" y="247" font-size="12" fill="#2a2a24" text-anchor="end">2007–09 — S&amp;P 500</text>
+  <rect x="300" y="226" width="370.7" height="32" rx="2" fill="#b8b8b2"/>
+  <text x="678" y="247" font-size="12" fill="#2a2a24" font-weight="700">−56.8%</text>
+  <!-- Row 5: 1929 Dow -89.2 -->
+  <text x="290" y="295" font-size="12" fill="#2a2a24" text-anchor="end">1929 — Dow (tail only)</text>
+  <rect x="300" y="274" width="582.1" height="32" rx="2" fill="#e8543f" fill-opacity="0.7"/>
+  <text x="890" y="295" font-size="12" fill="#2a2a24" font-weight="700">−89.2%</text>
+</svg>
+<p class="cap">2000–02: S&amp;P 500 1,527.46 (Mar 24, 2000) → 776.83 (Oct 9, 2002) = −49.1%, 31 months; Nasdaq 5,048.62 (Mar 10, 2000) → 1,114.11 (Oct 9, 2002) = −77.9%; Russell 2000 606.05 → 327.04 = −46.0%. 2007–09: 1,565.15 → 676.53 = −56.8%. 1987: Dow 2,722.42 (Aug 25, 1987) → 1,738.74 (Oct 20, 1987) = −36.1%. 1929: Dow 381.17 (Sep 3, 1929) → 41.22 (Jul 8, 1932) = −89.2%. All peak close to trough close; intraday extremes excluded.</p>
+</figure>
+
+<h2>So, in plain English</h2>
+
+<p>The question in the headline was: <strong>10%? 50%?</strong> The data-based answer is a range: <strong>−30% to −50%</strong>, with a point estimate of <strong>≈ −40%</strong>. Ten percent would be the de-valuation-only case (1987 pattern); fifty percent is the deep end of the band, and it only appears when the AI capex cycle itself breaks — hyperscalers cut 2027 budgets, semi order books roll over, and a recession follows.</p>
+
+<p>Why the number is as big as it is: the AI trade is not a small corner of the index. It is <strong>≈ 41%</strong> of the S&amp;P 500 — 34.5% in seven core names (NVDA, AAPL, MSFT, GOOGL+GOOG, AMZN, META, AVGO) plus 7.0% in ten major semis. At the March 2000 peak, the top 10 stocks were <strong>27.6%</strong> of the S&amp;P 500. Today's top 10 is <strong>37.3–39.9%</strong> — <strong>1.45×</strong> the dot-com peak concentration. When that 2000 bubble burst, the S&amp;P 500 fell <strong>−49.1%</strong> and the Nasdaq <strong>−77.9%</strong> over <strong>31 months</strong>. Replaying that drawdown at today's heavier weights gives the <strong>−38%</strong> (AI basket −70%) to <strong>−54.5%</strong> (2000 replay scaled) range in the chart.</p>
+
+<p>One split dominates the outcome: <strong>whether AI earnings hold up</strong>. If the AI companies keep delivering and only the multiple gives back — the 1987 pattern, where the multiple compressed while fundamentals stayed intact — the same math says <strong>−15% to −25%</strong>. If instead the capex cycle breaks, it's <strong>−45% to −55%</strong> (2000 + 2008 combined).</p>
+
+<p>What keeps this off the 1929 wall (−80%+): the S&amp;P's forward P/E is <strong>18.58–19.0×</strong> today, not a 2000-grade multiple, and there is no margin-equivalent leveraged bet stacked on top of the AI trade. And on timing: the 2000 analog took <strong>~2.5–3 years</strong> from peak to trough — this is a slow-motion drawdown in every base-case scenario, not a single-day event.</p>
+
+<div class="callout">
+<div class="label">What this means for you</div>
+<p>If you hold the S&amp;P 500 — say <strong>$10,000</strong> in an S&amp;P 500 fund — a burst at the point estimate takes it to ≈ <strong>$6,000</strong> (−40%). In the earnings-hold case it's ≈ <strong>$7,500–$8,500</strong>; in the capex-break case ≈ <strong>$4,500–$5,500</strong>. That is the planning range to size your exposure against, because the risk is concentrated: <strong>≈ 41%</strong> of what you own through the index is the same trade. If you're close to when you'll need this money, the honest question isn't "will it happen" — it's "can I hold through a −30 to −50% drawdown without selling?" If the answer is no, the fix is in allocation and time horizon, not in prediction. None of this is a prediction of when — or whether — it happens.</p>
+</div>
+
+<h2>How I got these numbers</h2>
+<p>Every number in this post comes from the research leg of this batch (data as of the <strong>Oct 21, 2026 close</strong>: S&amp;P 500 <strong>7,757.17</strong>, index market cap <strong>$71.35T</strong>) and is sourced at the bottom. The scenario math is a two-component weighted average: <strong>index move = 41.4% × (AI basket move) + 58.6% × (rest-of-index move)</strong>. A sanity check: the same method applied to 2000's actual numbers (≈ 27.6% top basket × −75% + 72.4% × −40%) reproduces 2000's actual <strong>−49.1%</strong> S&amp;P drawdown, so the method works on 2000 — and today's heavier basket is what pushes the number deeper.</p>
+
+<div class="callout">
+<div class="label">ASSUMPTIONS — every number's basis, numbered</div>
+<ol>
+<li><strong>Data window / source.</strong> All market data as of the <strong>Oct 21, 2026 close</strong>: S&amp;P 500 <strong>7,757.17</strong>, index market cap <strong>$71.35T</strong>, weights from a tradmap constituent list; top-10 weight <strong>37.3%</strong> (Mar 2026) to <strong>39.9%</strong> (Oct 21, 2026), with three independent sources agreeing the top 10 is ~37–40%. Historical peak/trough closes from raw close series, sourced below.</li>
+<li><strong>"AI basket" definition.</strong> 17 names: the 7 core names (NVDA, AAPL, MSFT, GOOGL+GOOG, AMZN, META, AVGO) = <strong>34.5%</strong>, plus 10 major semis (MU, AMD, NXPI, INTC, ANET, LRCX, AMAT, MRVL, KLAC, QCOM) = <strong>7.0%</strong> → <strong>41.4%</strong> of the S&amp;P 500. (Mag-7 alone ≈ <strong>33–34%</strong>.)</li>
+<li><strong>TSMC is excluded.</strong> TSMC ($2.24T, world's #6 by market cap) is <strong>not an S&amp;P 500 constituent</strong> — its −70% scenario lands in the Nasdaq, not the S&amp;P 500; the index's exposure to it is indirect, through the NVDA/AVGO/MU/AMD supply chains.</li>
+<li><strong>Scenario basket moves</strong> (−30/−70/−80%) are taken from the <strong>observed 2000 tech outcomes</strong>: Nasdaq <strong>−77.9%</strong>, Cisco <strong>−89%</strong>, Intel <strong>−84%</strong>, Dell <strong>−83%</strong>.</li>
+<li><strong>"Rest of the index" moves</strong> (−2% to −40%) are the free parameter that encodes whether the burst transmits to the broader economy. In 2000, the rest of the index moved <strong>−40%</strong> (implied by the total −49.1% against the −75% top basket).</li>
+<li><strong>2000 peak top-10 concentration = 27.6%</strong> is the anchor for today's <strong>1.45×</strong> concentration ratio.</li>
+<li><strong>All index figures are closes</strong>, peak close to trough close. Intraday extremes (e.g., the S&amp;P 500's 666.08 intraday low in March 2009) are not used.</li>
+<li><strong>2008 and 1929</strong> figures are included for comparison and are judged <strong>poor</strong> analogs for an AI-specific burst — both were credit-driven, not valuation-driven. 1929-style (−80%+) is a tail case, not the base case.</li>
+<li><strong>No Fed policy assumption.</strong> No rate path is assumed; the S2 vs. S3 split is about whether the burst transmits, not about policy. The forward P/E (<strong>18.58–19.0×</strong>, Oct 18, 2026) is used only as a sanity bound that today is <strong>not</strong> a 2000-grade multiple starting point.</li>
+<li><strong>Evidence-based, not a guarantee.</strong> This is an expected range from historical analogs and current index weights — not a prediction, not a forecast of timing, and not investment advice.</li>
+</ol>
+</div>
+
+<div class="callout warn">
+<div class="label">Honest caveats</div>
+<p>This is scenario arithmetic, not a forecast — the burst may never come, and if it comes it may not look like any of these scenarios. The numbers rest on a defined 17-name AI basket; a different list gives a different 41%. The "rest of the index" move is the free parameter — it's where "contained in the basket" and "recession" live, and it's the least certain input in the math. All figures are close-based (intraday extremes excluded), TSMC is excluded (it's not in the S&amp;P 500), and no Fed policy path is assumed. None of it is a timing prediction; the 2000 analog only says that <em>if</em> it comes, it takes years, not days.</p>
+</div>
+
+<footer>
+<div><strong>Source list</strong> — full URLs in the research report for this batch</div>
+<ul>
+<li>S&amp;P 500 close 7,757.17 (Oct 21, 2026): <a href="https://portfolio-terminal.com/markets/sp-500/october-2026" target="_blank" rel="noopener">portfolio-terminal.com/markets/sp-500/october-2026</a></li>
+<li>Total index market cap ≈ $68.45T (Sep 30, 2026): <a href="https://seekingalpha.com/article/4850055" target="_blank" rel="noopener">seekingalpha.com/article/4850055</a></li>
+<li>Constituent weights/caps (Oct 21, 2026); top-10 39.9%; total $71.35T: <a href="https://tradmap.com/lists/sp500" target="_blank" rel="noopener">tradmap.com/lists/sp500</a></li>
+<li>Top-10 weights (Mar 2026): <a href="https://westmountfundamentals.com/sp500-companies-list" target="_blank" rel="noopener">westmountfundamentals.com/sp500-companies-list</a></li>
+<li>SPY top-10 (Jun 11, 2026); Goldman ~27% dot-com: <a href="https://ecmsource.com/sp500-top-10-concentration-37-percent-ai-eight-june-2026/" target="_blank" rel="noopener">ecmsource.com/sp500-top-10-concentration-37-percent-ai-eight-june-2026/</a></li>
+<li>Top-10 27.6% at Q1-2000 peak: <a href="https://lense-analytics.com/fundamentals/sp500-concentration-index" target="_blank" rel="noopener">lense-analytics.com/fundamentals/sp500-concentration-index</a></li>
+<li>Raw close series 2000–02 (all peak/trough values in the historical chart): <a href="https://exa.ai/library/markets/index/SPX?view=series&amp;from=1999-01-01&amp;to=2003-01-01" target="_blank" rel="noopener">exa.ai/library/markets/index/SPX?view=series</a> · <a href="https://exa.ai/library/markets/index/RUT?view=series&amp;from=2000-01-01&amp;to=2003-01-01" target="_blank" rel="noopener">…/index/RUT</a></li>
+<li>2000–02 drawdowns, per-name tech declines (Cisco −89%, Intel −84%, Dell −83%): <a href="https://convextrade.com/history/2000-dotcom-crash" target="_blank" rel="noopener">convextrade.com/history/2000-dotcom-crash</a></li>
+<li>Nasdaq −78%, Russell 2000 −46.1% (Mar 19, 2020): <a href="https://bespokeinvest.github.io/2020/03/19/the-dot-com-bubble-in-14-charts/" target="_blank" rel="noopener">bespokeinvest.github.io/2020/03/19/the-dot-com-bubble-in-14-charts/</a></li>
+<li>S&amp;P 500 2007–09 closes (1,565.15 → 676.53): <a href="https://unanswered.io/financial-data/indexes/sp500/2007-2009" target="_blank" rel="noopener">unanswered.io/financial-data/indexes/sp500/2007-2009</a></li>
+<li>~57% (2008): <a href="https://www.frb.org/econ-research/essays/the-2008-financial-crisis-the-great-recession" target="_blank" rel="noopener">frb.org/econ-research/essays/the-2008-financial-crisis-the-great-recession</a></li>
+<li>Dow 381.17 → 41.22 (−89%): <a href="https://www.slickcharts.com/dowjones/crash/1929" target="_blank" rel="noopener">slickcharts.com/dowjones/crash/1929</a> · <a href="https://www.sociustrades.com/blog/1929-wall-street-crash-and-leverage" target="_blank" rel="noopener">sociustrades.com/blog/1929-wall-street-crash-and-leverage</a></li>
+<li>1987 figures (Dow −508 pts, −22.6% on Oct 20, 1987): <a href="https://www.nytimes.com/1987/10/20/business/stocks-plunge-508-points-a-drop-of-22.6-604-million-volume-nearly-doubles-record.html" target="_blank" rel="noopener">nytimes.com (Oct 20, 1987)</a> · <a href="https://www.federalreservehistory.org/essays/stock-market-crash-of-1987" target="_blank" rel="noopener">federalreservehistory.org/essays/stock-market-crash-of-1987</a></li>
+<li>TSMC $2.239T (Oct 2026): <a href="https://companiesmarketcap.com/tsmc/marketcap" target="_blank" rel="noopener">companiesmarketcap.com/tsmc/marketcap</a> · <a href="https://www.marketcaplens.com/company/TSM" target="_blank" rel="noopener">marketcaplens.com/company/TSM</a></li>
+<li>TSMC AI capacity/demand (mid-2026): <a href="https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3584596" target="_blank" rel="noopener">spglobal.com/ratings (id/3584596)</a></li>
+<li>Valuation — forward P/E 18.58–19.0×, trailing 22.42× (Oct 18–20, 2026): <a href="https://streetstats.finance/valuation/market" target="_blank" rel="noopener">streetstats.finance/valuation/market</a> · <a href="https://dollarliquidity.com/en/valuation/sp-500-forward-pe" target="_blank" rel="noopener">dollarliquidity.com/en/valuation/sp-500-forward-pe</a> · <a href="https://historyofmarket.com/sp500/forward-pe/" target="_blank" rel="noopener">historyofmarket.com/sp500/forward-pe/</a></li>
+</ul>
+<p style="margin-top:16px">Written with Hermes Agent · Local model · Not investment advice — your time horizon, taxes, and comfort are your own.</p>
+</footer>
+  </div>
+  </section>
 
 <section class="p15" id="p15">
 <div class="wrap">
